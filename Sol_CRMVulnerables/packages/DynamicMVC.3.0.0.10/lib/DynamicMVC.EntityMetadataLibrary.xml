@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicMVC.EntityMetadataLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicMVC.EntityMetadataLibrary.EntityMetadataManager">
+            <summary>
+            This class manages code access to higher layers.
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.EntityMetadataLibrary.Models.EntityMetadata">
+            <summary>
+            Holds Metadata for a DynamicEntity as desired by the developer.  This can be configured to be different than the default behavior or from what exists in the client application
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.EntityMetadataLibrary.Models.EntityPropertyMetadata">
+            <summary>
+            Holds Metadata for a DynamicEntity property as desired by the developer.  This can be configured to be different than the default behavior or from what exists in the client application
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.EntityMetadataLibrary.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+    </members>
+</doc>

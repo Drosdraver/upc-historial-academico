@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\compilado2018</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>09/20/2018 12:05:47</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>09/20/2018 12:05:47</publishTime>
+    </File>
+    <File Include="bin/App_Web_inasistencias.cshtml.d755150f.dll">
+      <publishTime>09/20/2018 12:05:47</publishTime>
+    </File>
+    <File Include="bin/App_Web_inicio.cshtml.d755150f.dll">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/App_Web_notasactuales.cshtml.d755150f.dll">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/App_Web_pagospendientes.cshtml.d755150f.dll">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/App_Web__layout.cshtml.639c3968.dll">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="bin/App_Web__layoutsingle.cshtml.639c3968.dll">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="bin/App_Web__viewstart.cshtml.65a2d1ee.dll">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Web.WebPages.OAuth.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.resources.dll">
+      <publishTime>07/09/2013 11:34:42</publishTime>
+    </File>
+    <File Include="bin/es/System.Net.Http.WebRequest.resources.dll">
+      <publishTime>07/09/2013 11:34:40</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.WebHost.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/es/WebMatrix.Data.resources.dll">
+      <publishTime>07/09/2013 11:35:42</publishTime>
+    </File>
+    <File Include="bin/es/WebMatrix.WebData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/FNT_BusinessEntities.dll">
+      <publishTime>09/20/2018 12:05:40</publishTime>
+    </File>
+    <File Include="bin/FNT_BusinessLogic.dll">
+      <publishTime>09/20/2018 12:05:41</publishTime>
+    </File>
+    <File Include="bin/FNT_Common.dll">
+      <publishTime>09/20/2018 12:05:40</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/inasistencias.cshtml.d755150f.compiled">
+      <publishTime>09/20/2018 12:05:47</publishTime>
+    </File>
+    <File Include="bin/inicio.cshtml.d755150f.compiled">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/notasactuales.cshtml.d755150f.compiled">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/pagospendientes.cshtml.d755150f.compiled">
+      <publishTime>09/20/2018 12:05:48</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/10/2012 12:07:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>07/10/2012 12:07:38</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/UICRMVulnerables.dll">
+      <publishTime>09/20/2018 12:05:41</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>07/09/2013 11:05:10</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="bin/_layout.cshtml.639c3968.compiled">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="bin/_layoutsingle.cshtml.639c3968.compiled">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="bin/_viewstart.cshtml.65a2d1ee.compiled">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap.mia.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/customizations.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-bdcap-webfont.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-bdcap-webfont.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-bdcap-webfont.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-bdcap-webfont.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-rgcap-webfont.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-rgcap-webfont.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-rgcap-webfont.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-rgcap-webfont.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilcap-webfont.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilcap-webfont.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilcap-webfont.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilcap-webfont.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilsc-webfont.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilsc-webfont.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilsc-webfont.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/upc_sgothic-stencilsc-webfont.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-bold.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-bold.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-bold.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-bold.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-regular.eot">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-regular.svg">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-regular.ttf">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fonts/zizou-slab-regular.woff">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/fuentes.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/main.mia.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/15/2017 16:52:36</publishTime>
+    </File>
+    <File Include="Images/avance-curricular.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/avance-curricular1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/avatar.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/button-down.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/datos-generales.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/datos-generales1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/deudas.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/deudas1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/historial-notas.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/historial-notas1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/horario.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/horario1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/icono-admiracion.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/inasistencias.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/inasistencias1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/notas.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/notas1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/preloader.gif">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/promedio-ponderado.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/promedio-ponderado1.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/red_eye.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Images/trama.png">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/20/2018 12:05:44</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/collapse.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/customInasistencias.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/customInicio.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/customizations.js">
+      <publishTime>04/12/2017 16:32:20</publishTime>
+    </File>
+    <File Include="Scripts/customNotasActuales.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/customPagosPendientes.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/dashboard.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/dropdown.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/fusioncharts.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/main-dist.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/mensajeError.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/modal.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/nav-custom.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/nav-desktop.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/procesosVistas.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/tiny-dist.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/tiny.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/vistaInasistencias.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/vistaInicio.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/vistaNotasActuales.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/vistaPagosPendientes.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Views/HistorialAcademico/Inasistencias.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/HistorialAcademico/Inicio.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/HistorialAcademico/NotasActuales.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/HistorialAcademico/PagosPendientes.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutSingle.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/21/2017 10:44:31</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/20/2018 12:05:49</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/20/2018 12:05:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

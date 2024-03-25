@@ -1,0 +1,67 @@
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\System.Net.Http.dll
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\System.Net.Http.xml
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\es\System.Net.Http.resources.dll
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+C:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb

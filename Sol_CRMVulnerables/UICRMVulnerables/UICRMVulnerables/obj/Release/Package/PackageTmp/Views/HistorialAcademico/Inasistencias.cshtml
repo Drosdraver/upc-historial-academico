@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSingle.cshtml";
+}
+
+<div class="tab-content container">
+    <div role="tabpanel" id="inasistencia">
+        <h1 class="zizou-26 black-text m-0">Inasistencias</h1>
+        <div class="short-title-blue-line mb-21"></div>
+        <div class="container-fluid">
+            <div class="row border-grey mt-21 mb-21">
+                <div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="solano-bold-26 pt-21 pl-21">Asignatura </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        <p class="solano-bold-26 text-center pt-21 pl-21">Clases</p>
+                    </div>
+                    <table class="col-md-12 col-sm-12 pb-21 helvetica table-bordered table-condensed ">
+                        <thead class="cf">
+                            <tr class="bg-blue black-text">
+                                <th class="text-center" style="color: #fff;">CÓDIGO</th>
+                                <th class="text-center" style="color: #fff;">DESCRIPCIÓN</th>
+                                <th class="numeric text-center" style="color: #fff;">DICTADAS</th>
+                                <th class="numeric text-center">ASISTIDAS</th>
+                                <th class="numeric text-center">INASISTIDAS</th>
+                                <th class="numeric text-center">INASISTIDAS EFECTIVAS</th>
+                                <th class="numeric text-center">FECHA DE INASISTENCIA</th>
+                                @*<th class="numeric text-center">NOMBRE DOCENTE</th>*@
+                            </tr>
+                        </thead>
+                        <tbody id="inasistencias-tbody-listaInasistencias"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/vistaInasistencias")

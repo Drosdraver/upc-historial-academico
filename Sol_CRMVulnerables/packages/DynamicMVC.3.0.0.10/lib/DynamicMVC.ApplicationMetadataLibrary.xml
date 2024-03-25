@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicMVC.ApplicationMetadataLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Interfaces.ISimpleTypeParser">
+            <summary>
+            Defines what can be a simple type and parses them from a string
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.ApplicationMetadataLibrary.Interfaces.ISimpleTypeParser.GetSimpleType">
+            <summary>
+            Used by the application to define what is a simple type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DynamicMVC.ApplicationMetadataLibrary.Interfaces.ISimpleTypeParser.Parse(System.String)">
+            <summary>
+            Parses the string value into the correct data type for the simple type
+            </summary>
+            <param name="value">string representation of the simple type data</param>
+            <returns>Returns correct type for the given simple type</returns>
+        </member>
+        <member name="M:DynamicMVC.ApplicationMetadataLibrary.Interfaces.ISimpleTypeParser.SimpleTypeEnum">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.ApplicationMetadataManager">
+            <summary>
+            This class manages code access for higher layers.
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationControllerMetadata">
+            <summary>
+            Holds information about the controllers exactly as they exist in the application
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationControllerMethodMetadata">
+            <summary>
+            Holdes information about the controller methods exactly as they exist in the application
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationEntity">
+            <summary>
+            Holds information about a class that has been flagged through the DynamicEntity.EntityType property on any other class or has the DynamicEntity attribute on itself.
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationEntityMetadata">
+            <summary>
+            Holds information about a class that has the DynamicEntity attribute on it.  This class is used to gather attributes about itself or any class it assigns itself to using the DynamicEntity.EntityType property.
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationEntityMetadataProperty">
+            <summary>
+            Holds information about a property of a class being reflected for a given ApplicationEntityMetadata
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationEntityProperty">
+            <summary>
+            Holds information about a property of a class being reflected for a given ApplicationEntity
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Models.ApplicationMetadataSummary">
+            <summary>
+            This class holds the results returned to the application for processing
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeBoolParser">
+            <summary>
+            Simple Type Parser for bool datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeByteNullableParser">
+            <summary>
+            Simple Type Parser for Nullable Byte datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeByteParser">
+            <summary>
+            Simple Type Parser for Byte datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeBoolNullableParser">
+            <summary>
+            Simple Type Parser for bool? datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeCharNullableParser">
+            <summary>
+            Simple Type Parser for Char datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeCharParser">
+            <summary>
+            Simple Type Parser for Nullable Char datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDateTimeNullableParser">
+            <summary>
+            Simple Type Parser for Nullable DateTime datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDateTimeParser">
+            <summary>
+            Simple Type Parser for DateTime datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDecimalNullableParser">
+            <summary>
+            Simple Type Parser for Nullable Decimal datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDecimalParser">
+            <summary>
+            Simple Type Parser for Decimal datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDoubleNullableParser">
+            <summary>
+            Simple Type Parser for Nullable Double datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeDoubleParser">
+            <summary>
+            Simple Type Parser for Double datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeFloatNullableParser">
+            <summary>
+            Simple Type Parser for Nullable Float datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeFloatParser">
+            <summary>
+            Simple Type Parser for Float datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeGuidNullableParser">
+            <summary>
+            Simple Type Parser for Nullable Guid datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeGuidParser">
+            <summary>
+            Simple Type Parser for Guid datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt16NullableParser">
+            <summary>
+            Simple Type Parser for Nullable Int16 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt16Parser">
+            <summary>
+            Simple Type Parser for Int16 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt32NullableParser">
+            <summary>
+            Simple Type Parser for Nullable Int32 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt32Parser">
+            <summary>
+            Simple Type Parser for Int32 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt64NullableParser">
+            <summary>
+            Simple Type Parser for Nullable Int64 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeInt64Parser">
+            <summary>
+            Simple Type Parser for Int64 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeStringParser">
+            <summary>
+            Simple Type Parser for String datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt64NullableParser">
+            <summary>
+            Simple Type Parser for Nullable UInt64 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeSByteNullableParser">
+            <summary>
+            Simple Type Parser for Nullable SByte datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeSByteParser">
+            <summary>
+            Simple Type Parser for SByte datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt16NullableParser">
+            <summary>
+            Simple Type Parser for Nullable UInt16 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt16Parser">
+            <summary>
+            Simple Type Parser for UInt16 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt32NullableParser">
+            <summary>
+            Simple Type Parser for Nullable UInt32 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt32Parser">
+            <summary>
+            Simple Type Parser for UInt32 datatype
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.ApplicationMetadataLibrary.Strategies.SimpleTypeParsers.SimpleTypeUInt64Parser">
+            <summary>
+            Simple Type Parser for UInt64 datatype
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.ApplicationMetadataLibrary.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+        <member name="M:DynamicMVC.ApplicationMetadataLibrary.UnityConfig.GetConfiguredContainer">
+            <summary>
+            Gets the configured Unity container.
+            </summary>
+        </member>
+    </members>
+</doc>

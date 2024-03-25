@@ -1,0 +1,681 @@
+﻿<div class="card row" style="background: #e1f0ff;">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <ul class="nav nav-tabs row" role="tablist">
+            <li role="presentation" class="active text-center ">
+                <a href="#datos" aria-controls="datos" role="tab" data-toggle="tab">
+                    <div class="datos"></div>
+                    <p class="zizou-18">Datos Generales</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a href="#avance-curricular" aria-controls="avance-curricular" role="tab" data-toggle="tab">
+                    <div class="avance"></div>
+                    <p class="zizou-18">Avance Curricular</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center ">
+                <a class="pl-28 pr-28" href="#historial-notas" aria-controls="historial-notas" role="tab" data-toggle="tab">
+                    <div class="historial-notas"></div>
+                    <p class="zizou-18">Historial de notas</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center ">
+                <a class="pl-28 pr-28" href="#horario" aria-controls="horario" role="tab" data-toggle="tab">
+                    <div class="horario"></div>
+                    <p class="zizou-18">Horarios</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a class="pl-35 pr-35" href="#notas" aria-controls="notas" role="tab" data-toggle="tab">
+                    <div class="notas"></div>
+                    <p class="zizou-18">Notas Actuales</p>
+                </a>
+            </li>
+
+            <li role="presentation" class="text-center">
+                <a href="#inasistencia" aria-controls="inasistencia" role="tab" data-toggle="tab" class="text-center">
+                    <div class="inasistencias"></div>
+                    <p class="zizou-18">Inasistencias</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a class="pl-28 pr-28" href="#deudas" aria-controls="deudas" role="tab" data-toggle="tab">
+                    <div class="deudas"></div>
+                    <p class="zizou-18">Deudas</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a class="pl-28 pr-28" href="#promedio" aria-controls="promedio" role="tab" data-toggle="tab">
+                    <div class="promedio"></div>
+                    <p class="zizou-18">Promedio Ponderado</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a class="pl-28 pr-28" href="#tramites" aria-controls="tramites" role="tab" data-toggle="tab">
+                    <div class="tramites"></div>
+                    <p class="zizou-18">Trámites</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <ul class="nav nav-tabs row" style="border-bottom: none;" role="tablist">
+            <div role="presentation" class="text-center pull-right pr-35">
+                <div role="tab" data-toggle="tab">
+                    <img id="datosAlumno-img-imagen" style="width: 44px;" alt="">
+                    <p class="helvetica m-0">
+                        <span id="datosAlumno-span-nombres"></span><br>
+                        <span id="datosAlumno-span-apePaterno"></span> <span id="datosAlumno-span-apeMaterno"></span><br>
+                        <span id="datosAlumno-span-codigoUsuario"></span>
+                    </p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<div class="tab-content container">
+    <div role="tabpanel" class="tab-pane active" id="datos">
+        <h1 class="zizou-26 text-black m-0">Datos generales</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="datosGenerales-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                <div class="pt-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="datosGenerales-sel-listaPeriodos"></select>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica">
+            <div class="info_period">
+                <div class="row border-grey mb-21">
+                    <div>
+                        <p class="solano-bold-26 pt-21 pl-21">Información General</p>
+                        <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                            <thead class="cf">
+                                <tr class="bg-blue " style="color: #fff;">
+                                    <th class="text-center">PERIODO</th>
+                                    <th class="text-center">CAMPUS</th>
+                                    <th class="numeric text-center">FACULTAD</th>
+                                    <th class="numeric text-center">CARRERA</th>
+                                    <th class="numeric text-center">CICLO ALUMNO</th>
+                                    <th class="numeric text-center">ESTADO MATRÍCULA</th>
+                                    <th class="numeric text-center">CATEGORÍA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #fff; text-align: center !important; margin-top: 21px;">
+                                    <td id="datosGenerales-td-codPeriodo" data-title="PERIODO"></td>
+                                    <td id="datosGenerales-td-campus" data-title="CAMPUS"></td>
+                                    <td id="datosGenerales-td-facultad" data-title="FACULTAD" class="numeric"></td>
+                                    <td id="datosGenerales-td-carrera" data-title="CARRERA" class="numeric"></td>
+                                    <td id="datosGenerales-td-cicloAlumno" data-title="CICLO ALUMNO" class="numeric"></td>
+                                    <td id="datosGenerales-td-estadoMatricula" data-title="ESTADO MATRÍCULA" class="numeric"></td>
+                                    <td id="datosGenerales-td-categoria" data-title="CATEGORÍA" class="numeric"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row border-grey mb-21">
+                    <div>
+                        <p class="solano-bold-26  pt-21 pl-21">Datos académicos</p>
+                        <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                            <thead class="cf">
+                                <tr class="bg-blue" style="color: #fff;text-align: center; ">
+                                    <th class="text-center">ORDEN</th>
+                                    <th class="text-center">ORDEN MÉRITO ACUMULADO</th>
+                                    <th class="numeric text-center">TIPO MÉRITO CARRERA</th>
+                                    <th class="numeric text-center">TIPO MÉRITO CARRERA ACUMULADO</th>
+                                    <th class="numeric text-center">PONDERADO ACTUAL</th>
+                                    <th class="numeric text-center">PONDERADO ACUMULADO</th>
+                                    <th class="numeric text-center">PONDERADO BECA</th>
+                                    <th class="numeric text-center">EGRESADO</th>
+                                    <th class="numeric text-center">PRONABEC</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #fff; text-align: center; margin-top: 21px;">
+                                    <td id="datosGenerales-td-orden" data-title="ORDEN"></td>
+                                    <td id="datosGenerales-td-ordenMeritoAcumulado" data-title="ORDEN MERITO ACUMULADO"></td>
+                                    <td id="datosGenerales-td-tipoMeritoCarrera" data-title="TIPO MÉRITO CARRERA" class="numeric"></td>
+                                    <td id="datosGenerales-td-tipoMeritoCarreraAcumulado" data-title="TIPO MÉRITO CARRERA ACUMULADO" class="numeric"></td>
+                                    <td id="datosGenerales-td-ponderadoActual" data-title="PONDERADO ACTUAL" class="numeric"></td>
+                                    <td id="datosGenerales-td-ponderadoAcumulado" data-title="PONDERADO ACUMULADO" class="numeric"></td>
+                                    <td id="datosGenerales-td-ponderadoBeca" data-title="PONDERADO BECA" class="numeric"></td>
+                                    <td id="datosGenerales-td-egresado" data-title="EGRESADO" class="numeric"></td>
+                                    <td id="datosGenerales-td-pronabec" data-title="PRONABEC" class="numeric"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26 pt-21 pl-21">Hechos Importantes</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue" style="color: #fff;text-align: center; ">
+                                <th class="text-center">FECHA</th>
+                                <th class="text-center">HORA</th>
+                                <th class="numeric text-center">TIPO DE REGISTRO</th>
+                                <th class="numeric text-center">DESCRIPCIÓN</th>
+                                <th class="numeric text-center">REGISTRADO POR</th>
+                                <th class="numeric text-center">ACTIVO</th>
+                                <th class="numeric text-center">PERIODO ELIMINADO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datosGenerales-tbody-hechosImportantes"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="avance-curricular">
+        <h1 class="zizou-26 black-text m-0">Avance curricular académico</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="AvanceCurricular-sel-listaModalidad"></select>
+            </div>
+        </div>
+        <h1 class="zizou-20 text-black pt-14 m-0">Asignaturas Obligatorias</h1>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica" id="avanceCurricular-div"></div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="historial-notas">
+        <h1 class="zizou-26 black-text m-0">Historial de notas</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="HistorialNotas-sel-listaModalidad"></select>
+            </div>
+        </div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica" id="historialNotas-div"></div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="horario">
+        <h1 class="zizou-26 black-text m-0">Horario Semanal</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Horario-sel-listaModalidad"></select>
+            </div>
+        </div>
+        <div class="container-fluid helvetica">
+            <div class="row border-grey mt-21 mb-21">
+                <div id="no-more-tables">
+                    <p id="horario-p-rangoFechas" class="solano-bold-26 text-center pt-21 pl-21"></p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-responsive table-condensed cf">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">LUNES</th>
+                                <th class="text-center">MARTES</th>
+                                <th class="numeric text-center">MIÉRCOLES</th>
+                                <th class="numeric text-center">JUEVES</th>
+                                <th class="numeric text-center">VIERNES</th>
+                                <th class="numeric text-center">SÁBADO</th>
+                                <th class="numeric text-center">DOMINGO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="horario-tbody-filasHorario"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row helvetica boldie" style="font-size: 11px;">
+            <div class="col-md-2 col-sm-2">
+                <p><span class="bg-item-horario-normal p-7">(NO)</span> Normal</p>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <p><span class="bg-item-horario-recuperacion p-7">(RE)</span> Recuperación</p>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <p><span class="bg-item-horario-examen p-7">(EX)</span> Examen</p>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <p><span class="bg-item-horario-adelanto p-7 ">(AD)</span> Adelanto</p>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <p><span class="bg-item-horario-adicional p-7 ">(AI)</span> Adicional</p>
+            </div>
+            <div class="col-md-2 col-sm-2 text-ledt">
+                <p style="font-size: 10px;"><span class="bg-item-horario-devolucion p-7">(DE)</span> Devolución de Exámenes</p>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="notas">
+        <h1 class="zizou-26 black-text m-0">Situación Actual</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+                <div class="pt-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="NotasActuales-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                <div class="p-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="NotasActuales-sel-listaPeriodos"></select>
+
+            </div>
+        </div>
+        <div class="border-special-table pr-21 pt-7 pb-7 mt-7 mb-7  pt-14 pb-14 pr-14">
+            <form class="form-inline helvetica text-center">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 ">
+                        <div class="p-7"><span>CÓDIGO</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-codigoCurso"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 ">
+                        <div class="p-7"><span>DESCRIPCIÓN</span></div>
+                    </div>
+                    <div class="col-lg-9 col-md-6 col-sm-5 col-xs-12">
+                        <select style="width: 100%;" class="drop-down drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="avanceNotas-sel-cursos"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12  mt-14">
+                        <div class="p-7"><span>SECCIÓN</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-seccion"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12  mt-14">
+                        <div class="p-7"><span>GRUPO</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-5 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-grupo"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 mt-14 ">
+                        <div class="p-7"><span>VEZ</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-vez"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 mt-14 ">
+                        <div class="p-7"><span>CRÉDITOS</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-5 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-creditos"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica">
+            <div class="row border-grey  mb-21">
+                <div>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered w-100 table-responsive table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">TIPO</th>
+                                <th class="text-center">EVALUACIÓN</th>
+                                <th class="numeric text-center">N°</th>
+                                <th class="numeric text-center">PESO</th>
+                                <th class="numeric text-center">NOTA</th>
+                                @*<th class="numeric text-center">ACTUALIZADO POR</th>
+                                    <th class="numeric text-center">FECHA ACTUALIZACIÓN</th>
+                                    <th class="numeric text-center">OBSERVACIONES</th>*@
+                            </tr>
+                        </thead>
+                        <tbody id="avanceNotas-tbody-notas"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="border-special-table helvetica boldie table-condensed w-100 cf p-14 mt-35">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Avance al: </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="avanceNotas-div-avancePorcentual"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center red">NOTA NO OFICIAL:</div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center" id="avanceNotas-div-notaNoOficial"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">NOTA PROYECTADA:</div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center" id="avanceNotas-div-notaProyectada"></div>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="inasistencia">
+        <h1 class="zizou-26 black-text m-0">Inasistencias</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Inasistencias-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                <div class="pt-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Inasistencias-sel-listaPeriodos"></select>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-grey mt-21 mb-21">
+                <div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="solano-bold-26 pt-21 pl-21">Asignatura </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                        <p class="solano-bold-26 text-center pt-21 pl-21">Clases</p>
+                    </div>
+                    <table class="col-md-12 col-sm-12 pb-21 helvetica table-bordered table-condensed ">
+                        <thead class="cf">
+                            <tr class="bg-blue black-text">
+                                <th class="text-center" style="color: #fff;">CÓDIGO</th>
+                                <th class="text-center" style="color: #fff;">DESCRIPCIÓN</th>
+                                <th class="numeric text-center" style="color: #fff;">DICTADAS</th>
+                                <th class="numeric text-center">ASISTIDAS</th>
+                                <th class="numeric text-center">INASISTIDAS</th>
+                                <th class="numeric text-center">INASISTIDAS EFECTIVAS</th>
+                                <th class="numeric text-center">FECHA DE INASISTENCIA</th>
+                                @*<th class="numeric text-center">NOMBRE DOCENTE</th>*@
+                            </tr>
+                        </thead>
+                        <tbody id="inasistencias-tbody-listaInasistencias"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="deudas">
+        <h1 class="zizou-26 black-text m-0">Deudas</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Deudas-sel-listaModalidad"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p class="helvetica-20 boldie pb-21">UPC S.A.C.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right"><p class="helvetica-20  boldie">Fecha: <span id="deudas-span-fechaActual"></span></p></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row border-grey mb-21">
+                <div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="solano-bold-26 pt-21 pl-21">Estados de cuenta corriente</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                        <p class="helvetica boldie  text-center pt-28 pl-21">Alumno: <span id="deudas-span-codigoAlumno"></span></p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                        <p class="helvetica boldie text-center pt-28 pl-21"><span id="deudas-span-nombreAlumno"></span></p>
+                    </div>
+                    <table class="col-md-12 col-sm-12 pb-21 helvetica w-100 table-bordered table-responsive table-condensed ">
+                        <thead class="cf">
+                            <tr class="bg-blue" style="color: #000;">
+                                <th class="text-center" style="color: #fff">DOCUMENTOS</th>
+                                <th class="text-center" style="color: #fff">FECHA DE EMISIÓN</th>
+                                <th class="numeric text-center" style="color: #fff">FECHA VENCIMIENTO</th>
+                                <th class="numeric text-center" style="color: #fff">TIPO DE VENTA</th>
+                                <th class="numeric text-center" style="color: #000;">MONEDA</th>
+                                <th class="numeric text-center" style="color: #000;">IMPORTE</th>
+                                <th class="numeric text-center" style="color: #000;">MORA</th>
+                                <th class="numeric text-center" style="color: #000;">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-black" id="deudas-tbody-tablaDeudas"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="promedio">
+        <h1 class="zizou-26 black-text m-0">Promedio Ponderado</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Promedio-sel-listaModalidad"></select>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-21 mb-21">
+                <div class="col-lg-12">
+                </div>
+                <div class="border-grey helvetica">
+                    <table class="col-lg-12 col-md-12 col-sm-12 col-xs-12  pb-21  table-condensed cf">
+                        <thead class="cf bg-blue">
+                            <tr style="color: #fff;">
+                                <th style="width:100%; padding:1%;">PROMEDIO PONDERADO POR PERIODO DE MATRÍCULA</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="container" style="margin-top: 60px; margin-bottom: 20px;">
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <div class="vertical">Periodo</div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 pt-35">
+                            <ul class="periodos pt-21 pl-14 pt-35" id="promedioPonderado-ul-codPeriodo"></ul>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8  pt-7">
+                            <div class="text-center pb-35">
+                                <div class="col-lg-11 col-md-12 col-sm-12 text-center pb-21">Promedio Ponderado</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 ">0</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">2</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">4</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">6</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">8</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">10</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">12</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">14</div>
+                                <div class="col-lg-1 col-md-1 col-sm-1">16</div>
+                            </div>
+                            <span class="meters pt-14" id="promedioPonderado-span-porcentaje"></span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 pt-35">
+                            <ul class="periodos pt-35 pl-7" id="promedioPonderado-ul-promedio"></ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="pt-28">
+                            <div class="col-md-offset-1 col-md-3 col-sm-3">
+                                <p><span class="bg-item-leyenda-verde p-7 mr-14"></span> Promedio mayor o igual a <span class="promedioPonderado-span-promedioNaranja"></span></p>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <p><span class="bg-item-leyenda-amarillo p-7 mr-14"></span> Promedio mayor o igual a <span class="promedioPonderado-span-promedioRojo"></span> y menor que <span class="promedioPonderado-span-promedioNaranja"></span></p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <p><span class="bg-item-leyenda-rojo p-7 mr-14"></span> Promedio menor a <span class="promedioPonderado-span-promedioRojo"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="tramites">
+        <h1 class="zizou-26 black-text m-0">Trámites</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="clearfix"></div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica" id="tramites-div">
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26 pt-21 pl-21">Estado de Trámites - Mi UPC</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-miupc">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26  pt-21 pl-21">Estado de Trámites - Intranet</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-intranet">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26 pt-21 pl-21">Estado de Trámites - ??</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-preguntar">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/vistaInicio")

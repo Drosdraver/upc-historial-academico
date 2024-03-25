@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReflectionLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ReflectionLibrary.Interfaces.IReflectedClass">
+            <summary>
+            Shows all information for a given type
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedClass.Name">
+            <summary>
+            TypeName
+            </summary>
+        </member>
+        <member name="T:ReflectionLibrary.Interfaces.IReflectedMethod">
+            <summary>
+            Shows All Information for MethodInfo
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedMethod.Name">
+            <summary>
+            Method Name
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedMethod.ReflectedClass">
+            <summary>
+            Parent Class
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedMethod.Attributes">
+            <summary>
+            Attributes that are decorating this method
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedProperty.GetValueFunction">
+            <summary>
+            Func value , item
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Interfaces.IReflectedProperty.SetValueAction">
+            <summary>
+            propertyInfo.SetValue(item, value);
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Models.ReflectedProperty.GetValueFunction">
+            <summary>
+            Func value , item //return propertyInfo.GetValue(item);
+            </summary>
+        </member>
+        <member name="P:ReflectionLibrary.Models.ReflectedProperty.SetValueAction">
+            <summary>
+            propertyInfo.SetValue(item, value);
+            </summary>
+        </member>
+        <member name="M:ReflectionLibrary.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+        <member name="M:ReflectionLibrary.UnityConfig.GetConfiguredContainer">
+            <summary>
+            Gets the configured Unity container.
+            </summary>
+        </member>
+    </members>
+</doc>

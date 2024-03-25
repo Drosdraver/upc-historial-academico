@@ -1,0 +1,370 @@
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\DataProtection.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\System.Net.Http.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\System.Net.Http.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\DataProtection.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\System.Net.Http.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\System.Net.Http.xml
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+D:\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\DataProtection.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_Common.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csproj.CopyComplete
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb

@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSingle.cshtml";
+}
+
+<div class="tab-content container">
+    <div role="tabpanel" id="deudas">
+        <h1 class="zizou-26 black-text m-0">Deudas</h1>
+        <div class="short-title-blue-line mb-21"></div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p class="helvetica-20 boldie pb-21">UPC S.A.C.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right"><p class="helvetica-20  boldie">Fecha: <span id="deudas-span-fechaActual"></span></p></div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row border-grey mb-21">
+                <div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="solano-bold-26 pt-21 pl-21">Estados de cuenta corriente</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                        <p class="helvetica boldie  text-center pt-28 pl-21">Alumno: <span id="deudas-span-codigoAlumno"></span></p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                        <p class="helvetica boldie text-center pt-28 pl-21"><span id="deudas-span-nombreAlumno"></span></p>
+                    </div>
+                    <table class="col-md-12 col-sm-12 pb-21 helvetica w-100 table-bordered table-responsive table-condensed ">
+                        <thead class="cf">
+                            <tr class="bg-blue" style="color: #000;">
+                                <th class="text-center" style="color: #fff">DOCUMENTOS</th>
+                                <th class="text-center" style="color: #fff">FECHA DE EMISIÓN</th>
+                                <th class="numeric text-center" style="color: #fff">FECHA VENCIMIENTO</th>
+                                <th class="numeric text-center" style="color: #fff">TIPO DE VENTA</th>
+                                <th class="numeric text-center" style="color: #000;">MONEDA</th>
+                                <th class="numeric text-center" style="color: #000;">IMPORTE</th>
+                                <th class="numeric text-center" style="color: #000;">MORA</th>
+                                <th class="numeric text-center" style="color: #000;">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-black" id="deudas-tbody-tablaDeudas"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/vistaPagosPendientes")

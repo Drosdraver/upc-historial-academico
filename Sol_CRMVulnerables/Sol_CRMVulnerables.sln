@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebCRMVulnerables", "WebCRMVulnerables", "{10144E28-02C3-4B68-9801-BD5E36C5B95F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{F2D8DA93-A917-4788-8824-98233B938D1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{E367B24F-315C-4931-BD75-6069A11830A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Entities", "Business Entities", "{CE35A5EB-6CE6-4A89-83C8-BBE5B35F67B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{10D4F4C4-5F14-4AA3-848C-A863D575DEFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNT_BusinessEntities", "FNT_BusinessEntities\FNT_BusinessEntities.csproj", "{105B65E0-DCFA-4783-93BC-0C1C8E979F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNT_BusinessLogic", "FNT_BusinessLogic\FNT_BusinessLogic.csproj", "{C63689BF-81BF-4D0F-A834-A39C09A6C275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNT_Common", "FNT_Common\FNT_Common.csproj", "{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebMVC", "WebMVC", "{15B14552-3D80-404F-83A7-D49DF900E022}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cliente", "Cliente", "{94F8301E-1422-447C-A3A9-13F9D0F9224E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CRMVulnerables", "CRMVulnerables", "{8E700123-4D37-407E-B9D7-88BCBCBF103F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UICRMVulnerables", "UICRMVulnerables\UICRMVulnerables\UICRMVulnerables.csproj", "{A60A36C2-6194-48B1-8A87-2C371352077E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{105B65E0-DCFA-4783-93BC-0C1C8E979F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105B65E0-DCFA-4783-93BC-0C1C8E979F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105B65E0-DCFA-4783-93BC-0C1C8E979F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105B65E0-DCFA-4783-93BC-0C1C8E979F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C63689BF-81BF-4D0F-A834-A39C09A6C275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63689BF-81BF-4D0F-A834-A39C09A6C275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63689BF-81BF-4D0F-A834-A39C09A6C275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63689BF-81BF-4D0F-A834-A39C09A6C275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60A36C2-6194-48B1-8A87-2C371352077E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60A36C2-6194-48B1-8A87-2C371352077E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60A36C2-6194-48B1-8A87-2C371352077E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60A36C2-6194-48B1-8A87-2C371352077E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2D8DA93-A917-4788-8824-98233B938D1C} = {10144E28-02C3-4B68-9801-BD5E36C5B95F}
+		{E367B24F-315C-4931-BD75-6069A11830A7} = {F2D8DA93-A917-4788-8824-98233B938D1C}
+		{CE35A5EB-6CE6-4A89-83C8-BBE5B35F67B3} = {F2D8DA93-A917-4788-8824-98233B938D1C}
+		{10D4F4C4-5F14-4AA3-848C-A863D575DEFB} = {F2D8DA93-A917-4788-8824-98233B938D1C}
+		{105B65E0-DCFA-4783-93BC-0C1C8E979F1A} = {CE35A5EB-6CE6-4A89-83C8-BBE5B35F67B3}
+		{C63689BF-81BF-4D0F-A834-A39C09A6C275} = {E367B24F-315C-4931-BD75-6069A11830A7}
+		{A4AEF69C-AB0A-481B-B3F8-7A3AC6A099A7} = {10D4F4C4-5F14-4AA3-848C-A863D575DEFB}
+		{94F8301E-1422-447C-A3A9-13F9D0F9224E} = {15B14552-3D80-404F-83A7-D49DF900E022}
+		{8E700123-4D37-407E-B9D7-88BCBCBF103F} = {94F8301E-1422-447C-A3A9-13F9D0F9224E}
+		{A60A36C2-6194-48B1-8A87-2C371352077E} = {8E700123-4D37-407E-B9D7-88BCBCBF103F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicMVC.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicMVC.Shared.Models.ApplicationMetadataProvider">
+            <summary>
+            Holds information passed in from DynamicMVC related to Metadata for the application.  ApplicationMetadata can only reference Annotations.
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.Shared.Models.ApplicationMetadataProvider.#ctor(System.Reflection.Assembly,System.Reflection.Assembly,System.Reflection.Assembly)">
+            <summary>
+            Constructor that can be used if passing in assemblies to be reflected by dynamic mvc.
+            </summary>
+            <param name="mvcAssembly">MVC project assembly.</param>
+            <param name="metaDataAssembly">Project assembly that holds the metadata for the entities in the solution.</param>
+            <param name="entityAssembly">Project assembly that holds the entities in the solution.</param>
+        </member>
+        <member name="M:DynamicMVC.Shared.Models.ApplicationMetadataProvider.#ctor(System.Collections.Generic.IEnumerable{System.Type},System.Collections.Generic.IEnumerable{System.Type},System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+             Extensability constructor
+            </summary>
+            <param name="mvcAssemblyTypes">Types reflected from MVC Project</param>
+            <param name="metaDataAssemblyTypes">Types reflected from project that contains Metadata for Dynamic Entities</param>
+            <param name="entityAssemblyTypes">Types reflected from project that contains Dynamic Entities</param>
+        </member>
+        <member name="P:DynamicMVC.Shared.Models.ApplicationMetadataProvider.MvcAssemblyTypes">
+            <summary>
+            Types reflected from MVC Project
+            </summary>
+        </member>
+        <member name="P:DynamicMVC.Shared.Models.ApplicationMetadataProvider.MetadataAssemblyTypes">
+            <summary>
+            Types reflected from project that contains Metadata for Dynamic Entities
+            </summary>
+        </member>
+        <member name="P:DynamicMVC.Shared.Models.ApplicationMetadataProvider.EntityAssemblyTypes">
+            <summary>
+            Types reflected from project that contains Dynamic Entities
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.Shared.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+        <member name="M:DynamicMVC.Shared.UnityConfig.GetConfiguredContainer">
+            <summary>
+            Gets the configured Unity container.
+            </summary>
+        </member>
+    </members>
+</doc>

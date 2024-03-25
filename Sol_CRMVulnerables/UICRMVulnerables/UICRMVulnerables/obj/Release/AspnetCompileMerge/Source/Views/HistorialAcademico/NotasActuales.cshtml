@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutSingle.cshtml";
+}
+
+<div class="tab-content container">
+    <div role="tabpanel" id="notas">
+        <h1 class="zizou-26 black-text m-0">Situación Actual</h1>
+        <div class="short-title-blue-line mb-35"></div>
+        <div class="border-special-table pr-21 pt-7 pb-7 mt-7 mb-7  pt-14 pb-14 pr-14">
+            <form class="form-inline helvetica text-center">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 ">
+                        <div class="p-7"><span>CÓDIGO</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-codigoCurso"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 ">
+                        <div class="p-7"><span>DESCRIPCIÓN</span></div>
+                    </div>
+                    <div class="col-lg-9 col-md-6 col-sm-5 col-xs-12">
+                        <select style="width: 100%;" class="drop-down drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="avanceNotas-sel-cursos"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12  mt-14">
+                        <div class="p-7"><span>SECCIÓN</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-seccion"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12  mt-14">
+                        <div class="p-7"><span>GRUPO</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-5 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-grupo"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 mt-14 ">
+                        <div class="p-7"><span>VEZ</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-vez"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 mt-14 ">
+                        <div class="p-7"><span>CRÉDITOS</span></div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-5 col-xs-12 pt-14">
+                        <div class="bg-item-horario p-7 m-0" style="height: 29px;">
+                            <span id="avanceNotas-span-creditos"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica">
+            <div class="row border-grey  mb-21">
+                <div>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered w-100 table-responsive table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">TIPO</th>
+                                <th class="text-center">EVALUACIÓN</th>
+                                <th class="numeric text-center">N°</th>
+                                <th class="numeric text-center">PESO</th>
+                                <th class="numeric text-center">NOTA</th>
+                                @*<th class="numeric text-center">ACTUALIZADO POR</th>
+                                    <th class="numeric text-center">FECHA ACTUALIZACIÓN</th>
+                                    <th class="numeric text-center">OBSERVACIONES</th>*@
+                            </tr>
+                        </thead>
+                        <tbody id="avanceNotas-tbody-notas"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="border-special-table helvetica boldie table-condensed w-100 cf p-14 mt-35">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Avance al: </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="avanceNotas-div-avancePorcentual"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center red">NOTA NO OFICIAL:</div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center" id="avanceNotas-div-notaNoOficial"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">NOTA PROYECTADA:</div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center" id="avanceNotas-div-notaProyectada"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/vistaNotasActuales")

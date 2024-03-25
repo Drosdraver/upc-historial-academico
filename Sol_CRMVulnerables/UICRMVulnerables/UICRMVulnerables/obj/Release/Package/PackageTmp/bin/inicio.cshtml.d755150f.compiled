@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/HistorialAcademico/Inicio.cshtml" hash="ffffffffe83aefe1" filehash="ffffe8c8ab8a5581" flags="110000" assembly="App_Web_inicio.cshtml.d755150f" type="ASP._Page_Views_HistorialAcademico_Inicio_cshtml">
+    <filedeps>
+        <filedep name="/Views/HistorialAcademico/Inicio.cshtml" />
+    </filedeps>
+</preserve>

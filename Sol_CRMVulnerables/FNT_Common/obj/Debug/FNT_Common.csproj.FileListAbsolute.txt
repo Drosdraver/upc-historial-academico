@@ -1,0 +1,84 @@
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\bin\Debug\System.Net.Http.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\bin\Debug\System.Net.Http.xml
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+C:\Users\Vicky\documents\visual studio 2015\Projects\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+G:\Leonardo files\UPC - Vulnerable\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+D:\TRABAJO\OSP\UPC\Vulnerables\Fuentes\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+G:\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+D:\Documents\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\bin\Debug\FNT_Common.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\bin\Debug\FNT_Common.pdb
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.dll
+D:\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\crm-Vulnerables\fuentes\FNT_Common\obj\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.Cache
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csprojResolveAssemblyReference.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\bin\Debug\FNT_Common.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Constants.resources
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.Resources.Messages.resources
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.GenerateResource.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.CoreCompileInputs.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicMVC.DynamicEntityMetadataLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:DynamicMVC.DynamicEntityMetadataLibrary.Interfaces.IDynamicMethodInvoker.InvokeMethodPreSaveOperation(System.Func{System.Object,System.Object[],System.Object},System.Object,System.Collections.Specialized.NameValueCollection,System.Object,System.String@,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="invokeMethodFunction">Function with the following signature - object Invoke(object obj, object[] parameters)</param>
+            <param name="id"></param>
+            <param name="formCollection"></param>
+            <param name="model"></param>
+            <param name="returnUrl"></param>
+            <param name="tempData"></param>
+            <param name="viewData"></param>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.DynamicEntityMetadataManager">
+            <summary>
+            This class manages code access to the higher layers.
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Managers.DynamicMethodManager">
+            <summary>
+            Encapsulates all logic for Dynamic Methods
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Managers.DynamicOperationManager">
+            <summary>
+            Encapsulates all logic for Dynamic Operations
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicPropertyMetadata">
+            <summary>
+            Holds Metadata for a DynamicEntity property after it has been parsed by dynamic mvc
+            </summary>
+        </member>
+        <member name="P:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicPropertyMetadata.DataType">
+            <summary>
+            DataType specified by DataTypeAttribute
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicEntityMetadata">
+            <summary>
+            Holds Metadata for a DynamicEntity after it has been parsed by dynamic mvc
+            </summary>
+        </member>
+        <member name="P:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicEntityMetadata.ListIncludes">
+            <summary>
+            Returns all properties that are complex entity types by default.
+            </summary>
+            
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicForiegnKeyPropertyMetadata">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DynamicMVC.DynamicEntityMetadataLibrary.Models.DynamicMethod.InvokeMethodFunction">
+            <summary>
+             Function with the following signature - object Invoke(object obj, object[] parameters)
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Strategies.DynamicEntityMetadataBuilderHelper.DefaultPropertyBuilderHelper">
+            <summary>
+            Sets the Default Property for a given entity
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Strategies.DynamicEntityMetadataBuilderHelper.DynamicMenuBuilderHelper">
+            <summary>
+            Sets any properties related to dynamic menus
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Strategies.DynamicEntityMetadataBuilderHelper.IncludesBuilderHelper">
+            <summary>
+            Sets ListIncludes and InstanceIncludes
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Strategies.DynamicEntityMetadataBuilderHelper.KeyPropertyBuilderHelper">
+            <summary>
+            Sets the Key Property for a given entity
+            </summary>
+        </member>
+        <member name="T:DynamicMVC.DynamicEntityMetadataLibrary.Strategies.DynamicEntityMetadataBuilderHelper.DynamicMethodsBuilderHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DynamicMVC.DynamicEntityMetadataLibrary.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+    </members>
+</doc>

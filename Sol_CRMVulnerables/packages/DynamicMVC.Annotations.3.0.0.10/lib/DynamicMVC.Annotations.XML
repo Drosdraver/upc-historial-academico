@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicMVC.Annotations</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicMVC.Annotations.Enums.TemplateTypeEnum">
+            <summary>
+            Enum specifies what kind of view is being displayed to the page
+            </summary>
+        </member>
+        <member name="F:DynamicMVC.Annotations.Enums.TemplateTypeEnum.Index">
+            <summary>
+            DynamicIndex
+            </summary>
+        </member>
+        <member name="F:DynamicMVC.Annotations.Enums.TemplateTypeEnum.Create">
+            <summary>
+            DynamicCreate
+            </summary>
+        </member>
+        <member name="F:DynamicMVC.Annotations.Enums.TemplateTypeEnum.Edit">
+            <summary>
+            DynamicEdit
+            </summary>
+        </member>
+        <member name="F:DynamicMVC.Annotations.Enums.TemplateTypeEnum.Delete">
+            <summary>
+            DynamicDelete
+            </summary>
+        </member>
+        <member name="F:DynamicMVC.Annotations.Enums.TemplateTypeEnum.Details">
+            <summary>
+            DynamicDetails
+            </summary>
+        </member>
+    </members>
+</doc>

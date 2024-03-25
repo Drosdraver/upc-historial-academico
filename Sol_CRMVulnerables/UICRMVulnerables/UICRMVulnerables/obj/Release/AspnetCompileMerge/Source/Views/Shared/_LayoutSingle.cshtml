@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+</head>
+<body>
+    <div id="preloader" class="hide">
+        <div id="status" class="hide">&nbsp;</div>
+    </div>
+    <section id="contenido-alumno">
+        <div class="container-fluid">
+            <div class="">
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE ERROR -->
+    <button id="error-button" class="hide" data-toggle="modal" data-target="#error-modal">modal</button>
+    <div id="error-modal" class="modal bs-example-modal-lg fade" role="dialog">
+        <div class="height-50"></div>
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content no-radius">
+                <div class="p-35">
+                    <div class="text-center pb-14">
+                        <img src="../Images/icono-admiracion.png" alt="">
+                    </div>
+                    <h4 id="error-dialog-message" class="zizou text-center boldie" style="color: #000;"></h4>
+                    <div class="text-center pt-14">
+                        <button type="button" class="btn no-radius btn-custom black-btn wide lg p-0 mt-0" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
