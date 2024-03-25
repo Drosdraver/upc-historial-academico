@@ -82,3 +82,4 @@ C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academi
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.CoreCompileInputs.cache
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.dll
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_Common\obj\Debug\FNT_Common.csproj.AssemblyReference.cache

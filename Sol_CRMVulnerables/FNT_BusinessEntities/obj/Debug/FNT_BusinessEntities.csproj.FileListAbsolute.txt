@@ -90,3 +90,4 @@ C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academi
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Debug\FNT_BusinessEntities.csproj.CopyComplete
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Debug\FNT_BusinessEntities.dll
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Debug\FNT_BusinessEntities.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Debug\FNT_BusinessEntities.csproj.AssemblyReference.cache
