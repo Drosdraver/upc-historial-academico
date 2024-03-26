@@ -23,7 +23,7 @@ namespace FNT_BusinessLogic
         {
             DTODocumentoFiscalResultado documentoFiscal = new DTODocumentoFiscalResultado();
 
-            if (ExampleData.UsarDataEjemplo)
+            if (!ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJDocumentoFiscal;
                 documentoFiscal = JsonConvert.DeserializeObject<DTODocumentoFiscalResultado>(dataEjemplo);
@@ -38,12 +38,15 @@ namespace FNT_BusinessLogic
             try
             {
                 var url =
-                    ConfigurationManager.AppSettings["Servidor_ws"] +
+                    ConfigurationManager.AppSettings["Servidor_ws_deudas"] +
                     ConfigurationManager.AppSettings["Ws_DocumentoFiscal"] +
                     String.Format("{0}/-/-/-/-/-/-/{1}", pc_clienteCobrara, ConfigurationManager.AppSettings["CodigoDeudasPendientes"]);
 
                 WebClient webClient = ConexionServicio.CurrentWebClientConfig();
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(ConexionServicio.ValidateServerCertificate);
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
                 var data = webClient.DownloadString(url);
                 documentoFiscal = JsonConvert.DeserializeObject<DTODocumentoFiscalResultado>(data);
 

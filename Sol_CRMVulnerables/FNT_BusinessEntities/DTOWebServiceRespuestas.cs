@@ -19,5 +19,8 @@ namespace FNT_BusinessEntities
         public DTOMatriculasRespuesta DTOMatriculasRespuesta { get; set; }
         public DTOClientesResultado DTOClientesResultado { get; set; }
         public DTODocumentoFiscalResultado DTODocumentoFiscalResultado { get; set; }
+        public DTOTramitesResultado DTOTramitesMiUpcRespuesta { get; set; }
+        public DTOTramitesResultado DTOTramitesIntranetRespuesta { get; set; }
+        public DTOTramitesResultado DTOTramitesEpgRespuesta { get; set; }
     }
 }

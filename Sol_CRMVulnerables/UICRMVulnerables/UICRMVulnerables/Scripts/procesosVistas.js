@@ -437,6 +437,83 @@ function llenarPeriodoDatosGenerales(codPeriodo) {
     }
 }
 
+function mostrarTramites(data) {
+  
+    var htmlTramitesMiUpc;
+    $(data.DTOTramitesMiUpc.ListaTramiteAlumno).each(function () {
+        htmlTramitesMiUpc = '';
+        htmlTramitesMiUpc +=
+        '<tr style="text-align: center; margin-top: 21px;">' +
+        '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+        '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+        '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+        '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+        '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+        '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+        '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+        '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+        '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+        '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+        '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+        '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+        '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+        '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#datosGenerales-tbody-hechosImportantes').append(htmlTramitesMiUpc);
+    })
+
+    var htmlTramitesIntranet;
+    $(data.DTOTramitesIntranet.ListaTramiteAlumno).each(function () {
+        htmlTramitesIntranet = '';
+        htmlTramitesIntranet +=
+            '<tr style="text-align: center; margin-top: 21px;">' +
+            '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+            '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+            '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+            '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+            '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+            '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+            '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+            '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+            '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+            '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+            '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+            '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+            '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+            '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#tramites-tbody-intranet').append(htmlTramitesIntranet);
+    })
+
+    var htmlTramitesEpg;
+    $(data.DTOTramitesEpg.ListaTramiteAlumno).each(function () {
+        htmlTramitesEpg = '';
+        htmlTramitesEpg +=
+            '<tr style="text-align: center; margin-top: 21px;">' +
+            '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+            '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+            '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+            '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+            '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+            '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+            '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+            '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+            '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+            '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+            '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+            '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+            '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+            '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#tramites-tbody-epg').append(htmlTramitesEpg);
+    })
+
+    
+}
+
 function llenarNotasCurso(codCurso) {
     var data = null;
     $(dataNotasCurso).each(function () {

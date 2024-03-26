@@ -23,7 +23,7 @@ namespace FNT_BusinessLogic
         {
             DTOClientesResultado clientes = new DTOClientesResultado();
 
-            if (ExampleData.UsarDataEjemplo)
+            if (!ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJCliente;
                 clientes = JsonConvert.DeserializeObject<DTOClientesResultado>(dataEjemplo);
@@ -38,12 +38,14 @@ namespace FNT_BusinessLogic
             try
             {
                 var url =
-                    ConfigurationManager.AppSettings["Servidor_ws"] +
+                    ConfigurationManager.AppSettings["Servidor_ws_deudas"] +
                     ConfigurationManager.AppSettings["Ws_Cliente"] +
                     String.Format("-/{0}/-/-/-", pc_codUsuario);
 
                 WebClient webClient = ConexionServicio.CurrentWebClientConfig();
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(ConexionServicio.ValidateServerCertificate);
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                 var data = webClient.DownloadString(url);
                 clientes = JsonConvert.DeserializeObject<DTOClientesResultado>(data);
 
