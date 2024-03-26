@@ -41,6 +41,7 @@ function procesarHistorialAcademico() {
                 mostrarInasistencias(jsonRes.DatosVista.DTOTabInasistencias);
                 mostrarDeudas(jsonRes.DatosVista.DTOTabDeudas);
                 mostrarPromedioPonderado(jsonRes.DatosVista.DTOTabPromedioPonderado);
+                mostrarTramites(jsonRes.datosVista.DTOTabTramites);
 
                 $(document).on('change', '#datosGenerales-sel-listaPeriodos', function () {
                     llenarPeriodoDatosGenerales($(this).val());

@@ -44,5 +44,6 @@ namespace FNT_BusinessEntities
         public DTOTabInasistencias DTOTabInasistencias { get; set; }
         public DTOTabDeudas DTOTabDeudas { get; set; }
         public DTOTabPromedioPonderado DTOTabPromedioPonderado { get; set; }
+        public DTOTabTramites DTOTabTramites { get; set; }
     }
 }

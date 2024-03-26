@@ -39,7 +39,8 @@ namespace FNT_BusinessLogic
                 DTOTabAvanceNotas = new DTOTabAvanceNotas(),
                 DTOTabInasistencias = new DTOTabInasistencias(),
                 DTOTabDeudas = new DTOTabDeudas(),
-                DTOTabPromedioPonderado = new DTOTabPromedioPonderado()
+                DTOTabPromedioPonderado = new DTOTabPromedioPonderado(),
+                DTOTabTramites = new DTOTabTramites()
             };
 
             DTOParametrosServicios oParams = new DTOParametrosServicios()
@@ -346,6 +347,25 @@ namespace FNT_BusinessLogic
                 oDatosVista.DTOTabPromedioPonderado = PreparandoDataPromedioPonderado(tmpListaMatriculaDet);
                 #endregion
 
+                #region trámites
+                DTOTramitesResultado wsTramitesMiUpc = TramitesBusinessLogic.getTramites(ConfigurationManager.AppSettings["Ws_tramitator_mi_upc"], oParams.CodLineaNegocio, oParams.CodModalEst, oParams.CodAlumno);
+                DTOTramitesResultado wsTramitesIntranet = TramitesBusinessLogic.getTramites(ConfigurationManager.AppSettings["Ws_tramitator_intranet"], oParams.CodLineaNegocio, oParams.CodModalEst, oParams.CodAlumno);
+                DTOTramitesResultado wsTramitesEpg = TramitesBusinessLogic.getTramites(ConfigurationManager.AppSettings["Ws_tramitator_epe"], oParams.CodLineaNegocio, oParams.CodModalEst, oParams.CodAlumno);
+                
+                if (wsTramitesMiUpc.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
+                    throw new Exception(wsTramitesMiUpc.DTOHeader.DescRetorno);
+                if (wsTramitesIntranet.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
+                    throw new Exception(wsTramitesIntranet.DTOHeader.DescRetorno);
+                if (wsTramitesEpg.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
+                    throw new Exception(wsTramitesEpg.DTOHeader.DescRetorno);
+
+                wsRespuestas.DTOTramitesMiUpcRespuesta = wsTramitesMiUpc;
+                wsRespuestas.DTOTramitesIntranetRespuesta = wsTramitesIntranet;
+                wsRespuestas.DTOTramitesEpgRespuesta = wsTramitesEpg;
+
+                oDatosVista.DTOTabTramites = PreparandoDataTramites(wsRespuestas.DTOTramitesMiUpcRespuesta, wsRespuestas.DTOTramitesIntranetRespuesta, wsRespuestas.DTOTramitesEpgRespuesta);
+                #endregion
+
                 oHistorialAcademico.RespuestaExitosa = true;
             }
             catch (Exception ex)
@@ -358,6 +378,21 @@ namespace FNT_BusinessLogic
             oHistorialAcademico.DatosVista = oDatosVista;
 
             return oHistorialAcademico;
+        }
+
+        /// <summary>
+        /// Llenado de datos de la clase DTOTabTramites para poblar los datos de la pestaña de "Trámites".
+        /// </summary>
+        /// <returns></returns>
+        private static DTOTabTramites PreparandoDataTramites(DTOTramitesResultado wsTramitesMiUpc, DTOTramitesResultado wsTramitesIntranet, DTOTramitesResultado wsTramitesEpg)
+        {
+            DTOTabTramites tramitesResultado = new DTOTabTramites();
+
+            tramitesResultado.DTOTramitesMiUpc = wsTramitesMiUpc;
+            tramitesResultado.DTOTramitesMiIntranet = wsTramitesIntranet;
+            tramitesResultado.DTOTramitesMiEpg = wsTramitesEpg;
+
+            return tramitesResultado;
         }
 
         /// <summary>
