@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Views/HistorialAcademico/PagosPendientes.cshtml" hash="ffffffffe83aefe1" filehash="ffffe7805620286c" flags="110000" assembly="App_Web_pagospendientes.cshtml.d755150f" type="ASP._Page_Views_HistorialAcademico_PagosPendientes_cshtml">
-    <filedeps>
-        <filedep name="/Views/HistorialAcademico/PagosPendientes.cshtml" />
-    </filedeps>
-</preserve>

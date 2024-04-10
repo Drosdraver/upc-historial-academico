@@ -8,6 +8,11 @@ using FNT_BusinessEntities.WebServiceRespuesta;
 using FNT_Common.Enum;
 using FNT_Common.Resources;
 using FNT_Common;
+using System.Threading.Tasks;
+using FNT_BusinessEntities.WebServiceRespuesta.Banner;
+using System.Net.Http.Headers;
+using static FNT_Common.ConexionServicio;
+using System.Net.Http;
 
 namespace FNT_BusinessLogic
 {
@@ -16,6 +21,7 @@ namespace FNT_BusinessLogic
     /// </summary>
     public class AlumnosBusinessLogic
     {
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_Banner"]) };
         /// <summary>
         /// Método que obtiene data del servicio de Alumnos.
         /// </summary>
@@ -57,6 +63,31 @@ namespace FNT_BusinessLogic
             }
 
             return alumnos;
+        }
+        /// <summary>
+        /// Método para obtener la data del servicio de Alumnos en Banner
+        /// </summary>
+        /// <param name="pc_cod_nivel"></param>
+        /// <param name="pc_cod_alumno"></param>
+        /// <returns></returns>
+        public async Task<DTOAlumnosRespuestaBanner> getAlumnosBanner(string pc_cod_nivel, string pc_cod_alumno)
+        {
+            ConexionServicio conexion = new ConexionServicio();
+            TokenResponse token = await conexion.GetTokenAsync();
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+
+            var response = await _httpClient.GetAsync($"/Academico/v4.0/Alumno?CodigoNivel={pc_cod_nivel}&CodigoAlumno={pc_cod_alumno}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var alumnoResponse = JsonConvert.DeserializeObject<DTOAlumnosRespuestaBanner>(jsonString);
+                return alumnoResponse;
+            }
+            else
+            {
+                throw new Exception($"Error al obtener los datos de alumno en el servicio. Status code: {response.StatusCode}");
+            }
         }
     }
 }

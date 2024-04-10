@@ -30,6 +30,19 @@ namespace FNT_BusinessEntities
         public string ClienteCobrara { get; set; }
     }
 
+    public class DTOParametrosServiciosBanner
+    {
+        public string CodNivelBanner { get; set; }
+        public string CodAlumnoBanner { get; set; }
+        public string CodUsuarioBanner { get; set; }
+        public string CodPeriodoBanner { get; set; }
+        public string CodProgramaBanner { get; set; }
+        public int CodPidmBanner { get; set; }
+        public string DescripcionNivelBanner { get; set; }
+        public string DescripcionProgramalBanner { get; set; }
+        public string IdBanner { get; set; }
+    }
+
     /// <summary>
     /// Clase con los datos procesados de cada una de las secciones del aplicativo.
     /// </summary>

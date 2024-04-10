@@ -7,6 +7,11 @@
     urlCodModalEst = getURLParameter("CodModalEst");
     urlCodPeriodo = getURLParameter("CodPeriodo");
 
+    //urlCodLineaNegocio = "U";
+    //urlCodAlumno = "202010172";
+    //urlCodModalEst = "AC";
+    //urlCodPeriodo = "202220";
+
     procesarServicios(procesarHistorialAcademico);
 })
 
@@ -36,6 +41,7 @@ function procesarHistorialAcademico() {
                 mostrarInasistencias(jsonRes.DatosVista.DTOTabInasistencias);
                 mostrarDeudas(jsonRes.DatosVista.DTOTabDeudas);
                 mostrarPromedioPonderado(jsonRes.DatosVista.DTOTabPromedioPonderado);
+                mostrarTramites(jsonRes.DatosVista.DTOTabTramites);
 
                 $(document).on('change', '#datosGenerales-sel-listaPeriodos', function () {
                     llenarPeriodoDatosGenerales($(this).val());

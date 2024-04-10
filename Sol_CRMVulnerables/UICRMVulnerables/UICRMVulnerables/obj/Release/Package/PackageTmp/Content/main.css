@@ -2349,6 +2349,15 @@ li.text-center.active {
     height: 50px;
    /* margin-bottom: 2px;*/
 }
+
+.tramites {
+	background: url('../Images/datos-generales.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 50px;
+	/* margin-bottom: 2px;*/
+}
+
 .nav-tabs > li.active  > a .promedio, .nav-tabs > li:hover > a .promedio{
 	background: url('../Images/promedio-ponderado1.png');
 	background-repeat: no-repeat;

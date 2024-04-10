@@ -76,6 +76,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,8 +84,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvanceCurricularBusinessLogic.cs" />
     <Compile Include="DocumentoFiscalBusinessLogic.cs" />
     <Compile Include="ClientesBusinessLogic.cs" />
+    <Compile Include="HistoriaAlumnoBusinessLogic.cs" />
     <Compile Include="InasistenciasBusinessLogic.cs" />
     <Compile Include="AvanceNotasBusinessLogic.cs" />
     <Compile Include="HorarioBusinessLogic.cs" />

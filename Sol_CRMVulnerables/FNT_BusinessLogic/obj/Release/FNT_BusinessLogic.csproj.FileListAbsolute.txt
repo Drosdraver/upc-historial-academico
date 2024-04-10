@@ -303,3 +303,35 @@ C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.dll
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_BusinessLogic.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_BusinessLogic.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_BusinessEntities.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Interception.Configuration.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\MongoDB.Bson.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\MongoDB.Driver.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Newtonsoft.Json.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_BusinessEntities.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\FNT_Common.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Interception.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Microsoft.Practices.Unity.Interception.Configuration.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\MongoDB.Bson.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\MongoDB.Driver.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Release\Newtonsoft.Json.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.csproj.CopyComplete
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Release\FNT_BusinessLogic.pdb

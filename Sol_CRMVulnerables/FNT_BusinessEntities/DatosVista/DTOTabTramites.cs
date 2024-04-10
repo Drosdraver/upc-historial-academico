@@ -10,8 +10,8 @@ namespace FNT_BusinessEntities.DatosVista
     public class DTOTabTramites
     {
         public DTOTramitesResultado DTOTramitesMiUpc { get; set; }
-        public DTOTramitesResultado DTOTramitesMiIntranet { get; set; }
-        public DTOTramitesResultado DTOTramitesMiEpg { get; set; }
+        public DTOTramitesResultado DTOTramitesIntranet { get; set; }
+        public DTOTramitesResultado DTOTramitesEpg { get; set; }
 
     }
 }

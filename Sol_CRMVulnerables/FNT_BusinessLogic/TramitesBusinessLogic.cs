@@ -22,9 +22,9 @@ namespace FNT_BusinessLogic
             DTOTramitesResultado tramites = new DTOTramitesResultado();
             tramites.DTOHeader = new DTOHeader();
 
-            if (ExampleData.UsarDataEjemplo)
+            if (!ExampleData.UsarDataEjemplo)
             {
-                String dataEjemplo = ExampleData.EJHechosImportantes;
+                String dataEjemplo = ExampleData.EJTramites;
                 tramites = JsonConvert.DeserializeObject<DTOTramitesResultado>(dataEjemplo);
                 tramites.DTOHeader.CodigoRetorno = HeaderEnum.Correcto.ToString();
                 tramites.DTOHeader.DescRetorno = String.Format("{0}: {1}", Messages.LecturaDatosExitosa, "getTramites");
@@ -35,8 +35,8 @@ namespace FNT_BusinessLogic
             try
             {
                 var url =
-                    ConfigurationManager.AppSettings["Servidor_ws_tramites"] +
-                    ConfigurationManager.AppSettings[servicio] +
+                    ConfigurationManager.AppSettings["Servidor_ws"] +
+                    servicio +
                     String.Format("?CodLineaNegocio={0}&CodModalEst={1}&CodAlumno={2}", pc_cod_linea_negocio, pc_cod_modalidad, pc_cod_alumno);
 
                 WebClient webClient = ConexionServicio.CurrentWebClientConfig();

@@ -8,6 +8,11 @@ using FNT_BusinessEntities.WebServiceRespuesta;
 using FNT_Common.Enum;
 using FNT_Common.Resources;
 using FNT_Common;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using FNT_BusinessEntities.WebServiceRespuesta.Banner;
+using static FNT_Common.ConexionServicio;
 
 namespace FNT_BusinessLogic
 {
@@ -16,6 +21,7 @@ namespace FNT_BusinessLogic
     /// </summary>
     public class DetalleMatriculaBusinessLogic
     {
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_Banner"]) };
         /// <summary>
         /// Método que obtiene data del servicio de Detalle de Matrícula.
         /// </summary>
@@ -57,6 +63,34 @@ namespace FNT_BusinessLogic
             }
 
             return detalleMatricula;
+        }
+
+        /// <summary>
+        /// Método que obtiene data del servicio de Detalle de Matrícula de Banner.
+        /// </summary>
+        /// <param name="pc_bearer_token"></param>
+        /// <param name="pc_cod_nivel"></param>
+        /// <param name="pc_cod_programa"></param>
+        /// <param name="pc_cod_alumno"></param>
+        /// <returns></returns>
+        public async Task<DTODetalleMatriculaBannerRespuesta> getDetalleMatriculaBanner(string pc_cod_nivel, string pc_cod_programa, string pc_cod_alumno)
+        {
+            ConexionServicio conexion = new ConexionServicio();
+            TokenResponse token = await conexion.GetTokenAsync();
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+
+            var response = await _httpClient.GetAsync($"/Academico/v4.0/DetalleMatricula?CodigoNivel={pc_cod_nivel}&CodigoPrograma={pc_cod_programa}&CodigoAlumno={pc_cod_alumno}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var alumnoResponse = JsonConvert.DeserializeObject<DTODetalleMatriculaBannerRespuesta>(jsonString);
+                return alumnoResponse;
+            }
+            else
+            {
+                throw new Exception($"Error al obtener los datos de detalle de matrícula en el servicio. Status code: {response.StatusCode}");
+            }
         }
     }
 }

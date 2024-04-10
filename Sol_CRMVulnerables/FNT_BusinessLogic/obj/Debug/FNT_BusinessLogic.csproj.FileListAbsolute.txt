@@ -336,6 +336,7 @@ C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csprojResolveAssemblyReference.cache
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.dll
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.dll
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessLogic.pdb
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\FNT_BusinessEntities.dll
@@ -360,7 +361,6 @@ C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academi
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
-C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Bson.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\MongoDB.Driver.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\bin\Debug\Newtonsoft.Json.xml
 C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessLogic\obj\Debug\FNT_BusinessLogic.csproj.AssemblyReference.cache

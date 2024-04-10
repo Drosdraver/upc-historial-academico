@@ -15,7 +15,7 @@ namespace FNT_BusinessEntities.DatosVista
         public String Facultad { get; set; }
         public String Carrera { get; set; }
         public List<DTODatosGeneralesPorPeriodo> listaDatosPorPeriodo { get; set; }
-        public List<DTODatosGeneralesHechosImportantes> listaHechosImportantes { get; set; } = new List<DTODatosGeneralesHechosImportantes>();
+        public List<DTODatosGeneralesHechosImportantes> listaHechosImportantes { get; set; }
     }
 
     /// <summary>

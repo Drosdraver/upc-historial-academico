@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using FNT_BusinessEntities;
 using FNT_BusinessLogic;
@@ -63,10 +64,11 @@ namespace UICRMVulnerables.Controllers
         /// Servicio POST que retorna un JSON con todos los valores necesarios para poblar la vista "Inicio".
         /// </summary>
         [HttpPost]
-        public JsonResult HistorialAcademicoResultado(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        public async Task<JsonResult> HistorialAcademicoResultado(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
         {
             DTOHistorialAcademico oDTOHistorialAcademico = new DTOHistorialAcademico();
-            oDTOHistorialAcademico = HistorialAcademicoBusinessLogic.getHistorialAcademico(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
+            HistorialAcademicoBusinessLogic historial = new HistorialAcademicoBusinessLogic();
+            oDTOHistorialAcademico = await historial.getHistorialAcademicoAsync(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
 
             return Json(Newtonsoft.Json.JsonConvert.SerializeObject(oDTOHistorialAcademico), JsonRequestBehavior.AllowGet);
         }
