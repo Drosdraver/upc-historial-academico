@@ -25,14 +25,13 @@
                     <p class="zizou-18">Horarios</p>
                 </a>
             </li>
-            <!-- JV 18/07/2019 
             <li role="presentation" class="text-center">
                 <a class="pl-35 pr-35" href="#notas" aria-controls="notas" role="tab" data-toggle="tab">
                     <div class="notas"></div>
                     <p class="zizou-18">Notas Actuales</p>
                 </a>
             </li>
-                -->
+
             <li role="presentation" class="text-center">
                 <a href="#inasistencia" aria-controls="inasistencia" role="tab" data-toggle="tab" class="text-center">
                     <div class="inasistencias"></div>
@@ -49,6 +48,12 @@
                 <a class="pl-28 pr-28" href="#promedio" aria-controls="promedio" role="tab" data-toggle="tab">
                     <div class="promedio"></div>
                     <p class="zizou-18">Promedio Ponderado</p>
+                </a>
+            </li>
+            <li role="presentation" class="text-center">
+                <a class="pl-28 pr-28" href="#tramites" aria-controls="tramites" role="tab" data-toggle="tab">
+                    <div class="tramites"></div>
+                    <p class="zizou-18">Trámites</p>
                 </a>
             </li>
         </ul>
@@ -74,17 +79,17 @@
         <h1 class="zizou-26 text-black m-0">Datos generales</h1>
         <div class="short-title-blue-line"></div>
         <div class="row helvetica-20 pt-35">
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
-                <div class="pt-7"><span>Periodo de Matrícula</span></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="datosGenerales-sel-listaPeriodos"></select>
-            </div>
             <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
                 <div class="p-7"><span>Modalidad</span></div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
                 <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="datosGenerales-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                <div class="pt-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="datosGenerales-sel-listaPeriodos"></select>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -182,7 +187,15 @@
 
     <div role="tabpanel" class="tab-pane" id="avance-curricular">
         <h1 class="zizou-26 black-text m-0">Avance curricular académico</h1>
-        <div class="short-title-blue-line mb-21"></div>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="AvanceCurricular-sel-listaModalidad"></select>
+            </div>
+        </div>
         <h1 class="zizou-20 text-black pt-14 m-0">Asignaturas Obligatorias</h1>
         <div class="height-25"></div>
         <div class="container-fluid helvetica" id="avanceCurricular-div"></div>
@@ -191,13 +204,29 @@
     <div role="tabpanel" class="tab-pane" id="historial-notas">
         <h1 class="zizou-26 black-text m-0">Historial de notas</h1>
         <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="HistorialNotas-sel-listaModalidad"></select>
+            </div>
+        </div>
         <div class="height-25"></div>
         <div class="container-fluid helvetica" id="historialNotas-div"></div>
     </div>
 
     <div role="tabpanel" class="tab-pane" id="horario">
         <h1 class="zizou-26 black-text m-0">Horario Semanal</h1>
-        <div class="short-title-blue-line mb-21"></div>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Horario-sel-listaModalidad"></select>
+            </div>
+        </div>
         <div class="container-fluid helvetica">
             <div class="row border-grey mt-21 mb-21">
                 <div id="no-more-tables">
@@ -243,7 +272,22 @@
 
     <div role="tabpanel" class="tab-pane" id="notas">
         <h1 class="zizou-26 black-text m-0">Situación Actual</h1>
-        <div class="short-title-blue-line mb-35"></div>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+                <div class="pt-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="NotasActuales-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                <div class="p-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="NotasActuales-sel-listaPeriodos"></select>
+
+            </div>
+        </div>
         <div class="border-special-table pr-21 pt-7 pb-7 mt-7 mb-7  pt-14 pb-14 pr-14">
             <form class="form-inline helvetica text-center">
                 <div class="row">
@@ -312,8 +356,8 @@
                                 <th class="numeric text-center">PESO</th>
                                 <th class="numeric text-center">NOTA</th>
                                 @*<th class="numeric text-center">ACTUALIZADO POR</th>
-                                <th class="numeric text-center">FECHA ACTUALIZACIÓN</th>
-                                <th class="numeric text-center">OBSERVACIONES</th>*@
+                                    <th class="numeric text-center">FECHA ACTUALIZACIÓN</th>
+                                    <th class="numeric text-center">OBSERVACIONES</th>*@
                             </tr>
                         </thead>
                         <tbody id="avanceNotas-tbody-notas"></tbody>
@@ -335,7 +379,21 @@
 
     <div role="tabpanel" class="tab-pane" id="inasistencia">
         <h1 class="zizou-26 black-text m-0">Inasistencias</h1>
-        <div class="short-title-blue-line mb-21"></div>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Inasistencias-sel-listaModalidad"></select>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                <div class="pt-7"><span>Periodo de Matrícula</span></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Inasistencias-sel-listaPeriodos"></select>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row border-grey mt-21 mb-21">
                 <div>
@@ -367,7 +425,15 @@
 
     <div role="tabpanel" class="tab-pane" id="deudas">
         <h1 class="zizou-26 black-text m-0">Deudas</h1>
-        <div class="short-title-blue-line mb-21"></div>
+        <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Deudas-sel-listaModalidad"></select>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <p class="helvetica-20 boldie pb-21">UPC S.A.C.</p>
@@ -410,6 +476,14 @@
     <div role="tabpanel" class="tab-pane" id="promedio">
         <h1 class="zizou-26 black-text m-0">Promedio Ponderado</h1>
         <div class="short-title-blue-line"></div>
+        <div class="row helvetica-20 pt-35">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 ">
+                <div class="p-7"><span>Modalidad</span></div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12">
+                <select style="width: 100%;" class="drop-down-2 w-100 no-radius helvetica helvetica-20 text-white select-grey-border input-grey-border-postula" id="Promedio-sel-listaModalidad"></select>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row mt-21 mb-21">
                 <div class="col-lg-12">
@@ -460,6 +534,99 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="tramites">
+        <h1 class="zizou-26 black-text m-0">Trámites</h1>
+        <div class="short-title-blue-line"></div>
+        <div class="clearfix"></div>
+        <div class="height-25"></div>
+        <div class="container-fluid helvetica" id="tramites-div">
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26 pt-21 pl-21">Estado de Trámites - Mi UPC</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-miupc">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26  pt-21 pl-21">Estado de Trámites - Intranet</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf ">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-intranet">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row border-grey mb-21">
+                <div>
+                    <p class="solano-bold-26 pt-21 pl-21">Estado de Trámites - EPG</p>
+                    <table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf " id="table-tramites">
+                        <thead class="cf">
+                            <tr class="bg-blue " style="color: #fff;">
+                                <th class="text-center">Código Alumno</th>
+                                <th class="text-center">Línea de Negocio</th>
+                                <th class="numeric text-center">Código Solicitud</th>
+                                <th class="numeric text-center">Fecha Solicitud</th>
+                                <th class="numeric text-center">Fecha Respuesta</th>
+                                <th class="numeric text-center">Motivo Solicitud</th>
+                                <th class="numeric text-center">Observación Solicitud</th>
+                                <th class="numeric text-center">Código Trámite</th>
+                                <th class="numeric text-center">Nombre Trámite</th>
+                                <th class="numeric text-center">Estado Solicitud</th>
+                                <th class="numeric text-center">Descripción Estado</th>
+                                <th class="numeric text-center">Usuario Creador</th>
+                                <th class="numeric text-center">Fecha Creación</th>
+                                <th class="numeric text-center">Usuario Modificador</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tramites-tbody-epg">
+                            
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

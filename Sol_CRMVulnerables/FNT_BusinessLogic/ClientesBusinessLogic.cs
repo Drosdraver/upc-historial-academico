@@ -23,7 +23,7 @@ namespace FNT_BusinessLogic
         {
             DTOClientesResultado clientes = new DTOClientesResultado();
 
-            if (!ExampleData.UsarDataEjemplo)
+            if (ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJCliente;
                 clientes = JsonConvert.DeserializeObject<DTOClientesResultado>(dataEjemplo);

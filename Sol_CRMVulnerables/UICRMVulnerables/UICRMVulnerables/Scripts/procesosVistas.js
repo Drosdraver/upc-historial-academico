@@ -460,7 +460,7 @@ function mostrarTramites(data) {
         '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
             '</tr>';
 
-        $('#datosGenerales-tbody-hechosImportantes').append(htmlTramitesMiUpc);
+        $('#tramites-tbody-miupc').append(htmlTramitesMiUpc);
     })
 
     var htmlTramitesIntranet;

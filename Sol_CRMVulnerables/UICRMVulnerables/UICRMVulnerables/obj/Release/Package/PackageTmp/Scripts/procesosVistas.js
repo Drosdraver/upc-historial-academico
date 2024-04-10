@@ -62,11 +62,27 @@ function mostrarDatosAlumno(data) {
 function mostrarDatosGenerales(data) {
     $(data.listaPeriodos).each(function () {
         $('#datosGenerales-sel-listaPeriodos').append('<option value="' + this.PeriodoVal + '">' + this.PeriodoDes + '</option>');
+        $('#NotasActuales-sel-listaPeriodos').append('<option value="' + this.PeriodoVal + '">' + this.PeriodoDes + '</option>');
+        $('#Inasistencias-sel-listaPeriodos').append('<option value="' + this.PeriodoVal + '">' + this.PeriodoDes + '</option>');
     })
     $(data.listaModalidades).each(function () {
         $('#datosGenerales-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#AvanceCurricular-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#HistorialNotas-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#Horario-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#NotasActuales-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#Inasistencias-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#Deudas-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
+        $('#Promedio-sel-listaModalidad').append('<option value="' + this.ModalidadVal + '">' + this.ModalidadDes + '</option>');
     })
     $('#datosGenerales-sel-listaModalidad').val(data.CodModalidad);
+    $('#AvanceCurricular-sel-listaModalidad').val(data.CodModalidad);
+    $('#HistorialNotas-sel-listaModalidad').val(data.CodModalidad);
+    $('#Horario-sel-listaModalidad').val(data.CodModalidad);
+    $('#NotasActuales-sel-listaModalidad').val(data.CodModalidad);
+    $('#Inasistencias-sel-listaModalidad').val(data.CodModalidad);
+    $('#Deudas-sel-listaModalidad').val(data.CodModalidad);
+    $('#Promedio-sel-listaModalidad').val(data.CodModalidad);
 
     $('#datosGenerales-td-codPeriodo').html(data.CodPeriodo);
     $('#datosGenerales-td-facultad').html(validText(data.Facultad));
@@ -419,6 +435,83 @@ function llenarPeriodoDatosGenerales(codPeriodo) {
         $('#datosGenerales-td-egresado').html(validText(data.Egresado));
         $('#datosGenerales-td-pronabec').html(validText(data.Pronabec));
     }
+}
+
+function mostrarTramites(data) {
+  
+    var htmlTramitesMiUpc;
+    $(data.DTOTramitesMiUpc.ListaTramiteAlumno).each(function () {
+        htmlTramitesMiUpc = '';
+        htmlTramitesMiUpc +=
+        '<tr style="text-align: center; margin-top: 21px;">' +
+        '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+        '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+        '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+        '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+        '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+        '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+        '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+        '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+        '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+        '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+        '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+        '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+        '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+        '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#tramites-tbody-miupc').append(htmlTramitesMiUpc);
+    })
+
+    var htmlTramitesIntranet;
+    $(data.DTOTramitesIntranet.ListaTramiteAlumno).each(function () {
+        htmlTramitesIntranet = '';
+        htmlTramitesIntranet +=
+            '<tr style="text-align: center; margin-top: 21px;">' +
+            '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+            '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+            '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+            '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+            '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+            '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+            '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+            '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+            '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+            '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+            '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+            '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+            '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+            '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#tramites-tbody-intranet').append(htmlTramitesIntranet);
+    })
+
+    var htmlTramitesEpg;
+    $(data.DTOTramitesEpg.ListaTramiteAlumno).each(function () {
+        htmlTramitesEpg = '';
+        htmlTramitesEpg +=
+            '<tr style="text-align: center; margin-top: 21px;">' +
+            '<td data-title="Código Alumno">' + validText(this.CodAlumno) + '</td>' +
+            '<td data-title="Línea de Negocio">' + validText(this.CodLineaNegocio) + '</td>' +
+            '<td data-title="Código Solicitud">' + validText(this.CodSolicitud) + '</td>' +
+            '<td data-title="Fecha Solicitud">' + validText(this.FechaSolicitud) + '</td>' +
+            '<td data-title="Fecha Respuesta">' + validText(this.FechaRespuesta) + '</td>' +
+            '<td data-title="Motivo Solicitud">' + validText(this.MotivoSolicitud) + '</td>' +
+            '<td data-title="Observación Solicitud">' + validText(this.ObservacionSolicitud) + '</td>' +
+            '<td data-title="Código Trámite">' + validText(this.IdTramite) + '</td>' +
+            '<td data-title="Nombre Trámite">' + validText(this.NombreTramite) + '</td>' +
+            '<td data-title="Estado Solicitud">' + validText(this.EstadoSolicitud) + '</td>' +
+            '<td data-title="Descripción Estado">' + validText(this.DescEstadoSolicitud) + '</td>' +
+            '<td data-title="Usuario Creador">' + validText(this.UsuarioCreador) + '</td>' +
+            '<td data-title="Fecha Creación">' + validText(this.FechaCreacion) + '</td>' +
+            '<td data-title="Usuario Modificador">' + validText(this.UsuarioModificador) + '</td>' +
+            '</tr>';
+
+        $('#tramites-tbody-epg').append(htmlTramitesEpg);
+    })
+
+    
 }
 
 function llenarNotasCurso(codCurso) {

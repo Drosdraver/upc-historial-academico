@@ -53,7 +53,14 @@
     <Compile Include="DatosVista\DTOTabAvanceNotas.cs" />
     <Compile Include="DatosVista\DTOTabHorarioAlumno.cs" />
     <Compile Include="DatosVista\DTOTabTramites.cs" />
+    <Compile Include="DTOHeaderBanner.cs" />
     <Compile Include="DTOWebServiceRespuestas.cs" />
+    <Compile Include="DTOWebServiceRespuestasBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTOAlumnoBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTOAvanceCurricularBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTODetalleMatriculaBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTOHistoriaAlumnoBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTOMatriculaBanner.cs" />
     <Compile Include="WebServiceRespuesta\DTOAlumnos.cs" />
     <Compile Include="WebServiceRespuesta\DTOAlumnosFacturables.cs" />
     <Compile Include="WebServiceRespuesta\DTOCarreraProfesional.cs" />

@@ -23,7 +23,7 @@ namespace FNT_BusinessLogic
         {
             DTODocumentoFiscalResultado documentoFiscal = new DTODocumentoFiscalResultado();
 
-            if (!ExampleData.UsarDataEjemplo)
+            if (ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJDocumentoFiscal;
                 documentoFiscal = JsonConvert.DeserializeObject<DTODocumentoFiscalResultado>(dataEjemplo);

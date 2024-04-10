@@ -70,6 +70,15 @@ namespace FNT_Common.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se cuenta con información para el Contacto seleccionado en Banner..
+        /// </summary>
+        public static string ErrorInfoAlumnoBanner {
+            get {
+                return ResourceManager.GetString("ErrorInfoAlumnoBanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No se cuenta con información para el Contacto seleccionado..
         /// </summary>
         public static string ErrorInfoMatriculas {

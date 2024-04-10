@@ -65,3 +65,13 @@ C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csprojResolveAssemblyReference.cache
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
 C:\data JULIO VILCA\Documents\aplicaciones\Fuentes_Proyectos\historialAcademico\AlumnosVulnerables\alumnosvulnerables\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\FNT_BusinessEntities.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csproj.AssemblyReference.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.csproj.CopyComplete
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.dll
+C:\Users\TecSupport\Documents\Alvaro Mendoza\Proyectos\UPC\upc-historial-academico\Sol_CRMVulnerables\FNT_BusinessEntities\obj\Release\FNT_BusinessEntities.pdb

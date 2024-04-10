@@ -8,6 +8,10 @@ using FNT_BusinessEntities.WebServiceRespuesta;
 using FNT_Common.Enum;
 using FNT_Common.Resources;
 using FNT_Common;
+using System.Threading.Tasks;
+using static FNT_Common.ConexionServicio;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace FNT_BusinessLogic
 {
@@ -19,6 +23,17 @@ namespace FNT_BusinessLogic
         /// <summary>
         /// Método que obtiene data del servicio de Inasistencias.
         /// </summary>
+        /// 
+        private readonly HttpClient _httpClient= new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_uapi"]) };
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pc_codLineaNegocio"></param>
+        /// <param name="pc_codAlumno"></param>
+        /// <param name="pc_codModalEst"></param>
+        /// <param name="pc_codPeriodo"></param>
+        /// <returns></returns>
         public static DTOInasistenciasResultado getInasistencias(string pc_codLineaNegocio, string pc_codAlumno, string pc_codModalEst, string pc_codPeriodo)
         {
             DTOInasistenciasResultado inasistencias = new DTOInasistenciasResultado();
@@ -57,6 +72,32 @@ namespace FNT_BusinessLogic
             }
 
             return inasistencias;
+        }
+        /// <summary>
+        /// Servicio que obtiene la lista de inasistencias del alumno por curso
+        /// </summary>
+        /// <param name="pc_cod_periodo"></param>
+        /// <param name="pc_cod_alumno"></param>
+        /// <param name="pc_cod_curso"></param>
+        /// <returns></returns>
+        public async Task<DTOInasistenciasResultado> getInasistenciasUapi(string pc_cod_periodo, string pc_cod_alumno, string pc_cod_curso)
+        {
+            ConexionServicio conexion = new ConexionServicio();
+            TokenResponseuapi token = await conexion.GetTokenInasistenciasAsync();
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.access_token);
+
+            var response = await _httpClient.GetAsync($"/api/class-api/report/non-attendance-students?CodPeriodo={pc_cod_periodo}&CodAlumno={pc_cod_alumno}&CodCurso={pc_cod_curso}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var alumnoResponse = JsonConvert.DeserializeObject<DTOInasistenciasResultado>(jsonString);
+                return alumnoResponse;
+            }
+            else
+            {
+                throw new Exception($"Error al obtener los datos de las inasistencias en el servicio. Status code: {response.StatusCode}");
+            }
         }
     }
 }

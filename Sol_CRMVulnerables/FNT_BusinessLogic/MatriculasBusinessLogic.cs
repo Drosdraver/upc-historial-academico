@@ -8,6 +8,11 @@ using FNT_BusinessEntities.WebServiceRespuesta;
 using FNT_Common.Enum;
 using FNT_Common.Resources;
 using FNT_Common;
+using System.Threading.Tasks;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using static FNT_Common.ConexionServicio;
+using FNT_BusinessEntities.WebServiceRespuesta.Banner;
 
 namespace FNT_BusinessLogic
 {
@@ -16,6 +21,7 @@ namespace FNT_BusinessLogic
     /// </summary>
     public class MatriculasBusinessLogic
     {
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_Banner"]) };
         /// <summary>
         /// Método que obtiene data del servicio de Matriculas.
         /// </summary>
@@ -57,6 +63,26 @@ namespace FNT_BusinessLogic
             }
 
             return matriculas;
+        }
+
+        public async Task<DTOMatriculaBannerRespuesta> getMatriculasBanner(string pc_cod_nivel, string pc_id_banner, string pc_cod_programa)
+        {
+            ConexionServicio conexion = new ConexionServicio();
+            TokenResponse token = await conexion.GetTokenAsync();
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+
+            var response = await _httpClient.GetAsync($"/Academico/v4.0/Matricula?CodigoNivel={pc_cod_nivel}&IdBanner={pc_id_banner}&CodigoPrograma={pc_cod_programa}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var alumnoResponse = JsonConvert.DeserializeObject<DTOMatriculaBannerRespuesta>(jsonString);
+                return alumnoResponse;
+            }
+            else
+            {
+                throw new Exception($"Error al obtener los datos de matrícula en el servicio. Status code: {response.StatusCode}");
+            }
         }
     }
 }
