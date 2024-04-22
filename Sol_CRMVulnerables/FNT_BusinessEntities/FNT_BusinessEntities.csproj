@@ -60,7 +60,9 @@
     <Compile Include="WebServiceRespuesta\Banner\DTOAvanceCurricularBanner.cs" />
     <Compile Include="WebServiceRespuesta\Banner\DTODetalleMatriculaBanner.cs" />
     <Compile Include="WebServiceRespuesta\Banner\DTOHistoriaAlumnoBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTOMallaCurricularBanner.cs" />
     <Compile Include="WebServiceRespuesta\Banner\DTOMatriculaBanner.cs" />
+    <Compile Include="WebServiceRespuesta\Banner\DTONotasActuales.cs" />
     <Compile Include="WebServiceRespuesta\DTOAlumnos.cs" />
     <Compile Include="WebServiceRespuesta\DTOAlumnosFacturables.cs" />
     <Compile Include="WebServiceRespuesta\DTOCarreraProfesional.cs" />

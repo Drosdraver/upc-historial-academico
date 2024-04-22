@@ -83,7 +83,7 @@ namespace FNT_BusinessLogic
         public async Task<DTOInasistenciasResultado> getInasistenciasUapi(string pc_cod_periodo, string pc_cod_alumno, string pc_cod_curso)
         {
             ConexionServicio conexion = new ConexionServicio();
-            TokenResponseuapi token = await conexion.GetTokenInasistenciasAsync();
+            TokenResponseuapi token = await conexion.GetTokenUClassAsync();
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.access_token);
 

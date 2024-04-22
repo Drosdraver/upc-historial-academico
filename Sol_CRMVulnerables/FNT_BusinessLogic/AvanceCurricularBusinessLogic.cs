@@ -17,23 +17,23 @@ namespace FNT_BusinessLogic
     {
         private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_Banner"]) };
 
-        public async Task<DTOAvanceCurricularBannerRespuesta> getAvanceCurricularBanner(string pc_cod_nivel, string pc_cod_alumno, string pc_cod_programa)
+        public async Task<DTOAvanceCurricularBannerRespuesta> getAvanceCurricularBanner(string pc_cod_nivel, string pc_cod_programa, string pc_id_banner)
         {
             ConexionServicio conexion = new ConexionServicio();
             TokenResponse token = await conexion.GetTokenAsync();
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
 
-            var response = await _httpClient.GetAsync($"/Academico/v4.0/AvanceCurricular?CodigoNivel={pc_cod_nivel}&CodigoAlumno={pc_cod_alumno}&CodigoPrograma={pc_cod_programa}");
+            var response = await _httpClient.GetAsync($"/Academico/v4.0/AvanceCurricular?CodigoNivel={pc_cod_nivel}&CodigoPrograma={pc_cod_programa}&IdBanner={pc_id_banner}");
             if (response.IsSuccessStatusCode)
             {
                 var jsonString = await response.Content.ReadAsStringAsync();
-                var alumnoResponse = JsonConvert.DeserializeObject<DTOAvanceCurricularBannerRespuesta>(jsonString);
-                return alumnoResponse;
+                var avanceResponse = JsonConvert.DeserializeObject<DTOAvanceCurricularBannerRespuesta>(jsonString);
+                return avanceResponse;
             }
             else
             {
-                throw new Exception($"Error al obtener los datos de matrícula en el servicio. Status code: {response.StatusCode}");
+                throw new Exception($"Error al obtener los datos de avance curricular de banner en el servicio. Status code: {response.StatusCode}");
             }
         }
     }

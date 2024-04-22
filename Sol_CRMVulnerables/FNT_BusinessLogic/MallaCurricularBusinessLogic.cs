@@ -8,6 +8,11 @@ using FNT_BusinessEntities.WebServiceRespuesta;
 using FNT_Common.Enum;
 using FNT_Common.Resources;
 using FNT_Common;
+using FNT_BusinessEntities.WebServiceRespuesta.Banner;
+using System.Threading.Tasks;
+using static FNT_Common.ConexionServicio;
+using System.Net.Http.Headers;
+using System.Net.Http;
 
 namespace FNT_BusinessLogic
 {
@@ -16,6 +21,7 @@ namespace FNT_BusinessLogic
     /// </summary>
     public class MallaCurricularBusinessLogic
     {
+        private readonly HttpClient _httpClient = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_Banner"]) };
         /// <summary>
         /// Método que obtiene data del servicio de Mallas Curriculares.
         /// </summary>
@@ -57,6 +63,26 @@ namespace FNT_BusinessLogic
             }
 
             return mallaCurricular;
+        }
+
+        public async Task<DTOMallaCurricularBannerRespuesta> getMallaCurricularBanner(string pc_cod_periodo, string pc_cod_programa)
+        {
+            ConexionServicio conexion = new ConexionServicio();
+            TokenResponse token = await conexion.GetTokenAsync();
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+
+            var response = await _httpClient.GetAsync($"/Academico/v4.0/MallaCurricular?CodigoPeriodo={pc_cod_periodo}&CodigoPrograma={pc_cod_programa}");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var mallaResponse = JsonConvert.DeserializeObject<DTOMallaCurricularBannerRespuesta>(jsonString);
+                return mallaResponse;
+            }
+            else
+            {
+                throw new Exception($"Error al obtener los datos de malla curricular de banner en el servicio. Status code: {response.StatusCode}");
+            }
         }
     }
 }

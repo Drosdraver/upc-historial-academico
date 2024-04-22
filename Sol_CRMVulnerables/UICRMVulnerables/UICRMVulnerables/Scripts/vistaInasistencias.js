@@ -13,7 +13,8 @@
 function procesarInasistencias() {
     $.ajax({
         dataType: "json",
-        url: "/HistorialAcademico/InasistenciasResultado",
+        //url: "/HistorialAcademico/InasistenciasResultado",
+        url: "/HistorialAcademico/InasistenciasResultadoBanner",
         method: "POST",
         data: {
             pc_CodLineaNegocio: urlCodLineaNegocio,

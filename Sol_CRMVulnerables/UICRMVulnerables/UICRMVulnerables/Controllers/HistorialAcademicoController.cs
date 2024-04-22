@@ -68,7 +68,7 @@ namespace UICRMVulnerables.Controllers
         {
             DTOHistorialAcademico oDTOHistorialAcademico = new DTOHistorialAcademico();
             HistorialAcademicoBusinessLogic historial = new HistorialAcademicoBusinessLogic();
-            oDTOHistorialAcademico = await historial.getHistorialAcademicoAsync(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
+            oDTOHistorialAcademico = await historial.getHistorialAcademicoBanner(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
 
             return Json(Newtonsoft.Json.JsonConvert.SerializeObject(oDTOHistorialAcademico), JsonRequestBehavior.AllowGet);
         }
@@ -86,6 +86,24 @@ namespace UICRMVulnerables.Controllers
         }
 
         /// <summary>
+        /// Servicio POST que retorna un JSON con todos los valores necesarios para poblar la vista "NotasActuales" de Banner.
+        /// </summary>
+        /// <param name="pc_CodLineaNegocio"></param>
+        /// <param name="pc_CodAlumno"></param>
+        /// <param name="pc_CodModalEst"></param>
+        /// <param name="pc_CodPeriodo"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<JsonResult> NotasActualesResultadoBanner(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        {
+            DTOHistorialAcademico oDTONotasActuales = new DTOHistorialAcademico();
+            HistorialAcademicoBusinessLogic historial = new HistorialAcademicoBusinessLogic();
+            oDTONotasActuales = await historial.getNotasActualesBanner(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
+
+            return Json(Newtonsoft.Json.JsonConvert.SerializeObject(oDTONotasActuales), JsonRequestBehavior.AllowGet);
+        }
+
+        /// <summary>
         /// Servicio POST que retorna un JSON con todos los valores necesarios para poblar la vista "Inasistencias".
         /// </summary>
         [HttpPost]
@@ -93,6 +111,24 @@ namespace UICRMVulnerables.Controllers
         {
             DTOHistorialAcademico oDTOInasistencias = new DTOHistorialAcademico();
             oDTOInasistencias = HistorialAcademicoBusinessLogic.getInasistencias(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
+
+            return Json(Newtonsoft.Json.JsonConvert.SerializeObject(oDTOInasistencias), JsonRequestBehavior.AllowGet);
+        }
+
+        /// <summary>
+        /// Servicio POST que retorna un JSON con todos los valores necesarios para poblar la vista "Inasistencias" de Banner.
+        /// </summary>
+        /// <param name="pc_CodLineaNegocio"></param>
+        /// <param name="pc_CodAlumno"></param>
+        /// <param name="pc_CodModalEst"></param>
+        /// <param name="pc_CodPeriodo"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<JsonResult> InasistenciasResultadoBanner(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        {
+            DTOHistorialAcademico oDTOInasistencias = new DTOHistorialAcademico();
+            HistorialAcademicoBusinessLogic historial = new HistorialAcademicoBusinessLogic();
+            oDTOInasistencias = await historial.getInasistenciasBanner(pc_CodLineaNegocio, pc_CodAlumno, pc_CodModalEst, pc_CodPeriodo);
 
             return Json(Newtonsoft.Json.JsonConvert.SerializeObject(oDTOInasistencias), JsonRequestBehavior.AllowGet);
         }

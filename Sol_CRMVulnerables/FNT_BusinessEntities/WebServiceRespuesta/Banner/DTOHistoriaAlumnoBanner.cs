@@ -70,4 +70,27 @@ namespace FNT_BusinessEntities.WebServiceRespuesta.Banner
         public string codigo { get; set; }
         public string descripcionEspecial { get; set; }
     }
+
+    public class Detail
+    {
+        public Dictionary<string, List<CursoHistoriaAlumno>> AgrupamientoCursosPeriodo(DTOHistoriaAlumnoBannerRespuesta parametro)
+        {
+            Dictionary<string, List<CursoHistoriaAlumno>> coursesByPeriod = new Dictionary<string, List<CursoHistoriaAlumno>>();
+
+            foreach (var historyStudent in parametro.detalle.listaHistoriaAlumno)
+            {
+                foreach (var course in historyStudent.listaCursos)
+                {
+                    if (!coursesByPeriod.ContainsKey(course.codigoPeriodo))
+                    {
+                        coursesByPeriod[course.codigoPeriodo] = new List<CursoHistoriaAlumno>();
+                    }
+
+                    coursesByPeriod[course.codigoPeriodo].Add(course);
+                }
+            }
+
+            return coursesByPeriod;
+        }
+    }
 }

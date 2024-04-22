@@ -123,6 +123,9 @@
   <data name="ErrorInfoAlumnoBanner" xml:space="preserve">
     <value>No se cuenta con información para el Contacto seleccionado en Banner.</value>
   </data>
+  <data name="ErrorInfoAvanceCuirricularBanner" xml:space="preserve">
+    <value>No se cuenta con información de Currícula para el alumno seleccionado:</value>
+  </data>
   <data name="ErrorInfoMatriculas" xml:space="preserve">
     <value>No se cuenta con información para el Contacto seleccionado.</value>
   </data>

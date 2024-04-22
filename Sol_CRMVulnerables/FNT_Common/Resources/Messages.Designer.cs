@@ -79,6 +79,15 @@ namespace FNT_Common.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se cuenta con información de Currícula para el alumno seleccionado:.
+        /// </summary>
+        public static string ErrorInfoAvanceCuirricularBanner {
+            get {
+                return ResourceManager.GetString("ErrorInfoAvanceCuirricularBanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No se cuenta con información para el Contacto seleccionado..
         /// </summary>
         public static string ErrorInfoMatriculas {

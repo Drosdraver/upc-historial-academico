@@ -76,7 +76,7 @@ namespace FNT_Common
         /// Obtener el Token de las inasistencias en al api https://upc-e2g-post-demo-api.gateway.u-planner.com
         /// </summary>
         /// <returns></returns>
-        public async Task<TokenResponseuapi> GetTokenInasistenciasAsync()
+        public async Task<TokenResponseuapi> GetTokenUClassAsync()
         {
             var requestBody = new
             {

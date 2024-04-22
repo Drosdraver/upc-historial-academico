@@ -99,6 +99,7 @@
     <Compile Include="DetalleMatriculaBusinessLogic.cs" />
     <Compile Include="AlumnosBusinessLogic.cs" />
     <Compile Include="MallaCurricularBusinessLogic.cs" />
+    <Compile Include="NotasActualesBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TramitesBusinessLogic.cs" />
   </ItemGroup>

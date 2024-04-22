@@ -13,7 +13,8 @@
 function procesarNotasActuales() {
     $.ajax({
         dataType: "json",
-        url: "/HistorialAcademico/NotasActualesResultado",
+        //url: "/HistorialAcademico/NotasActualesResultado",
+        url: "/HistorialAcademico/NotasActualesResultadoBanner",
         method: "POST",
         data: {
             pc_CodLineaNegocio: urlCodLineaNegocio,

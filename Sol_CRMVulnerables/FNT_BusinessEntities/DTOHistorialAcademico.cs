@@ -41,6 +41,7 @@ namespace FNT_BusinessEntities
         public string DescripcionNivelBanner { get; set; }
         public string DescripcionProgramalBanner { get; set; }
         public string IdBanner { get; set; }
+        public string CodModalidadBanner { get; set; }
     }
 
     /// <summary>

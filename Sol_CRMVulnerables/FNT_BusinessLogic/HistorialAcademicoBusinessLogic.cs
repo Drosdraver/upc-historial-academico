@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
 using FNT_BusinessEntities.WebServiceRespuesta.Banner;
+using static FNT_BusinessEntities.WebServiceRespuesta.Banner.DTOAvanceCurricularBannerRespuesta;
 
 namespace FNT_BusinessLogic
 {
@@ -22,7 +23,7 @@ namespace FNT_BusinessLogic
         /// <summary>
         /// Obtención y procesamiento de toda la información necesaria para llenar la vista de Inicio (todas las pestañas).
         /// </summary>
-        public async Task<DTOHistorialAcademico> getHistorialAcademicoAsync(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        public async Task<DTOHistorialAcademico> getHistorialAcademicoBanner(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
         {
             CultureInfo customCulture = (CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
             customCulture.NumberFormat.NumberDecimalSeparator = ".";
@@ -65,13 +66,6 @@ namespace FNT_BusinessLogic
                 String cod_nivel_banner = oParams.CodLineaNegocio + "G";
                 //DTOAlumnosRespuesta wsAlumnosRespuesta = AlumnosBusinessLogic.getAlumnos(oParams.CodLineaNegocio, oParams.CodAlumno);
                 DTOAlumnosRespuestaBanner wsAlumnosRespuestaBanner = await alumnosBusinessLogic.getAlumnosBanner(cod_nivel_banner, oParams.CodAlumno);
-                
-                //if (wsAlumnosRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                //    throw new Exception(wsAlumnosRespuesta.DTOHeader.DescRetorno);
-                //else if (wsAlumnosRespuesta.ListaDTOAlumnos == null)
-                //    throw new Exception(Messages.ErrorInfoAlumno);
-                //else if (wsAlumnosRespuesta.ListaDTOAlumnos.FirstOrDefault() == null)
-                //    throw new Exception(Messages.ErrorInfoAlumno);
 
                 //Validación de Respuesta para Get Alumno Banner
                 if (wsAlumnosRespuestaBanner.cabecera.codigoRespuesta != "0000")
@@ -81,91 +75,25 @@ namespace FNT_BusinessLogic
                 else if (wsAlumnosRespuestaBanner.detalle.listaAlumno == null)
                     throw new Exception(Messages.ErrorInfoAlumnoBanner);
 
-                //wsRespuestas.DTOAlumnosRespuesta = wsAlumnosRespuesta;
                 wsRespuestasBanner.DTOAlumnosRespuestaBanner = wsAlumnosRespuestaBanner;
-
-                //oDatosVista.DTODatosAlumno = PreparandoDataAlumno(wsRespuestas.DTOAlumnosRespuesta);
                 oDatosVista.DTODatosAlumno = PreparandoDataAlumnoBanner(wsRespuestasBanner.DTOAlumnosRespuestaBanner);
                 #endregion
 
-                //Pendiente completar los campos:
-                    //Información General: Ciclo Alumno, Estado Matrícula y Categoría
-                    //Datos Académicos: Orden, Ordén Mérito, Tipo Mérito Carrera, Tipo Mérito Acumulado, Ponderado Actual, POnderado Beca, Egresado, Pronabec
-                #region Lectura de datos generales
-                // Obtención de datos de matrículas
-                DTOMatriculasRespuesta wsMatriculasRespuesta = MatriculasBusinessLogic.getMatriculas(oParams.CodLineaNegocio, oParams.CodAlumno);
-                if (wsMatriculasRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    throw new Exception(wsMatriculasRespuesta.DTOHeader.DescRetorno);
-
-                // Filtrar resultados de matrículas por CodModalEst
-                if (wsMatriculasRespuesta.ListaDTOMatricula != null)
+                //Parámetros para los servicios de Banner y UClass
+                DTOParametrosServiciosBanner oParamsBanner = new DTOParametrosServiciosBanner()
                 {
-                    for (int i = wsMatriculasRespuesta.ListaDTOMatricula.Count - 1; i >= 0; i--)
-                    {
-                        if (wsMatriculasRespuesta.ListaDTOMatricula[i].DTOMatriculaCab.CodModalEst != oParams.CodModalEst)
-                            wsMatriculasRespuesta.ListaDTOMatricula.RemoveAt(i);
-                    }
-                    if (wsMatriculasRespuesta.ListaDTOMatricula.Count == 0)
-                        throw new Exception(Messages.ErrorInfoMatriculas);
-                }
-                else
-                    throw new Exception(Messages.ErrorInfoMatriculas);
-
-                List<DTOMatriculaDet> tmpListaMatriculaDet = wsMatriculasRespuesta.ListaDTOMatricula.First().ListaDTOMatriculaDet;
-                if (tmpListaMatriculaDet.Count > 0)
-                {
-                    DTOMatriculaDet tmpMatriculaDet = tmpListaMatriculaDet.Where(p => p.CodPeriodMat == oParams.CodPeriodo).FirstOrDefault();
-                    if (tmpMatriculaDet == null)
-                    {
-                        // Si el parámetro url de periodo no coincide con ningún periodo existente, se usa el ultimo periodo
-                        tmpMatriculaDet = tmpListaMatriculaDet.OrderByDescending(p => p.CodPeriodMat).First();
-                        oParams.CodPeriodo = tmpMatriculaDet.CodPeriodMat;
-                    }
-
-                    oParams.CodProducto = tmpMatriculaDet.CodProducMat;
-                    oParams.CodCurriculo = tmpMatriculaDet.CodCurricMAt.Value.ToString();
-                }
-                else
-                    throw new Exception(Messages.ErrorInfoMatriculas);
-
-                wsRespuestas.DTOMatriculasRespuesta = wsMatriculasRespuesta;
-
-                // Obtención de datos de alumnos facturables para cada periodo encontrado
-                DTOAlumnosFacturablesRespuesta wsAlumnosFacturables = new DTOAlumnosFacturablesRespuesta()
-                {
-                    ListaDTOAlumnosFacturables = new List<DTOAlumnosFacturables>()
+                    CodAlumnoBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoAlumno,
+                    CodNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.codigo,
+                    DescripcionNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.descripcion,
+                    CodProgramaBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().codigo,
+                    DescripcionProgramalBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().descripcion,
+                    CodPidmBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().pidm,
+                    IdBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().idBanner,
+                    CodUsuarioBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoUsuario,
+                    CodModalidadBanner = pc_CodModalEst,
                 };
-
-                DTOAlumnosFacturablesRespuesta tmpWsAluFact;
-                bool primeAluFact = true;
-
-                foreach (var md in wsRespuestas.DTOMatriculasRespuesta.ListaDTOMatricula.First().ListaDTOMatriculaDet)
-                {
-                    tmpWsAluFact = new DTOAlumnosFacturablesRespuesta();
-                    tmpWsAluFact = AlumnosFacturablesBusinessLogic.getAlumnosFacturables(oParams.CodLineaNegocio, oParams.CodAlumno, oParams.CodModalEst, md.CodPeriodMat);
-                    if (tmpWsAluFact.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString() ||
-                        tmpWsAluFact.ListaDTOAlumnosFacturables.FirstOrDefault() == null)
-                        continue;
-                    else
-                    {
-                        if (primeAluFact)
-                        {
-                            wsAlumnosFacturables.DTOHeader = tmpWsAluFact.DTOHeader;
-                            primeAluFact = false;
-                        }
-                        wsAlumnosFacturables.ListaDTOAlumnosFacturables.AddRange(tmpWsAluFact.ListaDTOAlumnosFacturables);
-                    }
-                }
-
-                wsRespuestas.DTOAlumnosFacturablesRespuesta = wsAlumnosFacturables;
-
-                // Obtención de datos de carrera profesional
-                DTOCarreraProfesionalRespuesta wsCarreraProfesional = CarreraProfesionalBusinessLogic.getCarreraProfesional(oParams.CodLineaNegocio, oParams.CodModalEst, oParams.CodProducto);
-                if (wsCarreraProfesional.oDTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    throw new Exception(wsCarreraProfesional.oDTOHeader.DescRetorno);
-
-                wsRespuestas.DTOCarreraProfesionalRespuesta = wsCarreraProfesional;
-
+                //Finalizado
+                #region Lectura de datos generales
                 // Obtención de datos de hechos importantes
                 DTOHechosImportantesRespuesta wsHechosImportantesRespuesta = HechosImportantesBusinessLogic.getHechosImportantes(oParams.CodLineaNegocio, oParams.CodAlumno);
                 if (wsHechosImportantesRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
@@ -179,18 +107,6 @@ namespace FNT_BusinessLogic
                 DetalleMatriculaBusinessLogic detalleMatriculaBusinessLogic = new DetalleMatriculaBusinessLogic();
                 HistoriaAlumnoBusinessLogic historiaAlumnoBusinessLogic = new HistoriaAlumnoBusinessLogic();
 
-                DTOParametrosServiciosBanner oParamsBanner = new DTOParametrosServiciosBanner()
-                {
-                    CodAlumnoBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoAlumno,
-                    CodNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.codigo,
-                    DescripcionNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.descripcion,
-                    CodProgramaBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().codigo,
-                    DescripcionProgramalBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().descripcion,
-                    CodPidmBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().pidm,
-                    IdBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().idBanner,
-                    CodUsuarioBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoUsuario
-                };
-
                 DTOMatriculaBannerRespuesta wsMatriculaRespuestaBanner = await matriculasBusinessLogic.getMatriculasBanner(oParamsBanner.CodNivelBanner,oParamsBanner.IdBanner, oParamsBanner.CodProgramaBanner);
                 DTODetalleMatriculaBannerRespuesta wsDetalleMatriculaRespuestaBanner = await detalleMatriculaBusinessLogic.getDetalleMatriculaBanner(oParamsBanner.CodNivelBanner,oParamsBanner.CodProgramaBanner,oParamsBanner.CodAlumnoBanner);
                 DTOHistoriaAlumnoBannerRespuesta wsHistoriaAlumnoBanner = await historiaAlumnoBusinessLogic.getHistoriaAlumnoBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodPidmBanner);
@@ -199,57 +115,41 @@ namespace FNT_BusinessLogic
 
                 #endregion
 
-                //Pendiente como se arma los datos con el servicio de Avance Curricular
-                //Implementado servicio de banner que retorna la información por código de nivel, código de alumno y código de programa
+                //Finalizado
                 #region Lectura de avance curricular
-                // Obtención de datos de matrículas
                 AvanceCurricularBusinessLogic avanceCurricularBusinessLogic = new AvanceCurricularBusinessLogic();
-                DTOMallaCurricularRespuesta wsMallaCurricular = MallaCurricularBusinessLogic.getMallaCurricular(oParams.CodLineaNegocio, oParams.CodProducto, oParams.CodCurriculo);
-                DTOAvanceCurricularBannerRespuesta wsAvanceCurricularRespuestaBanner = await avanceCurricularBusinessLogic.getAvanceCurricularBanner(wsRespuestasBanner.DTOAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.codigo,oParams.CodAlumno, wsRespuestasBanner.DTOAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().codigo) ;
-                
-                if (wsMallaCurricular.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    throw new Exception(wsMallaCurricular.DTOHeader.DescRetorno);
-                wsRespuestas.DTOMallaCurricularRespuesta = wsMallaCurricular;
+                //Comodin: Inicio
+                DTOAvanceCurricularBannerRespuesta wsAvanceCurricularBanner = await avanceCurricularBusinessLogic.getAvanceCurricularBanner("UG", "UFC_INGI_SP1", "N01716779");
+                //Comodin: Fin
+                //DTOAvanceCurricularBannerRespuesta wsAvanceCurricularBanner = await avanceCurricularBusinessLogic.getAvanceCurricularBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.IdBanner);
+                if (wsAvanceCurricularBanner.cabecera.codigoRespuesta != "0000")
+                    throw new Exception(wsAvanceCurricularBanner.cabecera.mensajeRespuesta);
+                else if (wsAvanceCurricularBanner.detalle == null)
+                    throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
+                else if (wsAvanceCurricularBanner.detalle.avanceCurricular == null)
+                    throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
 
-                // Obtención de datos de detalle de matrícula para cada periodo encontrado
-                DTODetMatriculaResultado wsDetalleMatricula = new DTODetMatriculaResultado()
-                {
-                    ListaDTODetMatriculaOBJ = new List<DTODetMatricula>()
-                };
-                DTODetMatriculaResultado tmpWsDetMat;
-                bool primerDetMat = true;
-                foreach (var per in oDatosVista.DTOTabDatosGenerales.listaPeriodos)
-                {
-                    tmpWsDetMat = new DTODetMatriculaResultado();
-                    tmpWsDetMat = DetalleMatriculaBusinessLogic.getDetalleMatricula(oParams.CodLineaNegocio, oParams.CodAlumno, oParams.CodModalEst, per.PeriodoVal);
-                    if (tmpWsDetMat.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString() ||
-                        tmpWsDetMat.ListaDTODetMatriculaOBJ.FirstOrDefault() == null)
-                        continue;
-                    else
-                    {
-                        if (primerDetMat)
-                        {
-                            wsDetalleMatricula.DTOHeader = tmpWsDetMat.DTOHeader;
-                            primerDetMat = false;
-                        }
-                        wsDetalleMatricula.ListaDTODetMatriculaOBJ.AddRange(tmpWsDetMat.ListaDTODetMatriculaOBJ);
-                    }
-                }
-
-                wsRespuestas.DTODetMatriculaResultado = wsDetalleMatricula;
-
-                //oDatosVista.DTOTabAvanceCurricular = PreparandoDataAvanceCurricular(wsRespuestas.DTOMallaCurricularRespuesta, wsRespuestas.DTODetMatriculaResultado);
-                oDatosVista.DTOTabAvanceCurricular = new DTOTabAvanceCurricular();
+                oDatosVista.DTOTabAvanceCurricular = PreparandoDataAvanceCurricularBanner(wsAvanceCurricularBanner);
                 #endregion
 
+                //Finalizado
                 #region Lectura de historial notas
-                //oDatosVista.DTOTabHistorialNotas = PreparandoDataHistorialNotas(wsRespuestas.DTOMallaCurricularRespuesta, wsRespuestas.DTOMatriculasRespuesta, wsRespuestas.DTODetMatriculaResultado);
-                oDatosVista.DTOTabHistorialNotas = new DTOTabHistorialNotas();
+
+                Detail respuesta = new Detail();
+                HistoriaAlumnoBusinessLogic historialNotasBusinessLogic = new HistoriaAlumnoBusinessLogic();
+                //Comodin: Inicio
+                DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner("UG", "UAC_ADMA_SP1", 851269);
+                //Comodin: Fin
+                //DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodPidmBanner);
+                // Agrupados los cursos Agrupados
+                Dictionary<string, List<CursoHistoriaAlumno>> cursosAgrupados = respuesta.AgrupamientoCursosPeriodo(wsHistorialNotasBanner);
+                oDatosVista.DTOTabHistorialNotas = PreparandoDataHistorialNotasBanner(cursosAgrupados, wsHistorialNotasBanner);
                 #endregion
 
+                //Pendiente
                 #region Lectura de datos de horario
-               // Obtención de datos de horario
-               DateTime datAhora = DateTime.Now;
+                // Obtención de datos de horario
+                DateTime datAhora = DateTime.Now;
                 Int16 diaSemana = Convert.ToInt16(datAhora.DayOfWeek);
                 if (diaSemana == 0) diaSemana = 7;
                 DateTime datFecha1 = datAhora.AddDays(-diaSemana + 1);
@@ -268,105 +168,49 @@ namespace FNT_BusinessLogic
                 }
                 #endregion
 
-                #region Lectura de datos de avance de notas
-                // Obtención de datos de avance de notas de todos los periodos
-                //DTOAvanceNotasRespuesta wsAvanceNotasRespuesta = new DTOAvanceNotasRespuesta()
-                //{
-                //    ListaNota = new List<DTOListaNota>()
-                //};
-                //DTOAvanceNotasRespuesta tmpWsAvNot;
-                //bool primerAvNot = true;
+                //Finalizado
+                #region Lectura de datos de avance de notas y Lectura de datos de inasistencias
 
-                //foreach (var per in oDatosVista.DTOTabDatosGenerales.listaPeriodos)
-                //{
-                //    tmpWsAvNot = new DTOAvanceNotasRespuesta();
-                //    tmpWsAvNot = AvanceNotasBusinessLogic.getAvanceNotas(oParams.CodLineaNegocio, oParams.CodAlumno, oParams.CodModalEst, per.PeriodoVal);
-                //    if (tmpWsAvNot.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString() ||
-                //        tmpWsAvNot.ListaNota.FirstOrDefault() == null)
-                //        continue;
-                //    else
-                //    {
-                //        if (primerAvNot)
-                //        {
-                //            wsAvanceNotasRespuesta.DTOHeader = tmpWsAvNot.DTOHeader;
-                //            wsAvanceNotasRespuesta.AvanceNota = tmpWsAvNot.AvanceNota;
-                //            primerAvNot = false;
-                //        }
-                //        wsAvanceNotasRespuesta.ListaNota.AddRange(tmpWsAvNot.ListaNota);
-                //    }
-                //}
+                NotasActualesBusinessLogic notasActualesBusinessLogic = new NotasActualesBusinessLogic();
+                DTONotasActualesRespuesta wsNotasActualesRespuestaUapi = new DTONotasActualesRespuesta();
 
-                //if (wsAvanceNotasRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
-                //{
-                //    if (wsAvanceNotasRespuesta.ListaNota != null)
-                //    {
-                //        if (wsAvanceNotasRespuesta.ListaNota.Count > 0)
-                //        {
-                //            wsRespuestas.DTOAvanceNotasRespuesta = wsAvanceNotasRespuesta;
-                //            oDatosVista.DTOTabAvanceNotas = PreparandoAvanceNotas(wsRespuestas.DTOAvanceNotasRespuesta, wsRespuestas.DTODetMatriculaResultado, wsRespuestas.DTOMallaCurricularRespuesta);
-                //        }
-                //    }
-                //}
+                List<DTONotasActualesRespuesta> listwsNotasActualesRespuestaUapi = new List<DTONotasActualesRespuesta>();
 
-                // Obtención de datos de avance de notas del periodo seleccionado por url
-                DTOAvanceNotasRespuesta wsAvanceNotasRespuesta = AvanceNotasBusinessLogic.getAvanceNotas(oParams.CodLineaNegocio, oParams.CodAlumno, oParams.CodModalEst, oParams.CodPeriodo);
-
-                if (wsAvanceNotasRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
-                {
-                    if (wsAvanceNotasRespuesta.ListaNota != null)
-                    {
-                        if (wsAvanceNotasRespuesta.ListaNota.Count > 0)
-                        {
-                            wsRespuestas.DTOAvanceNotasRespuesta = wsAvanceNotasRespuesta;
-                            //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotas(wsRespuestas.DTOAvanceNotasRespuesta, wsRespuestas.DTODetMatriculaResultado, wsRespuestas.DTOMallaCurricularRespuesta);
-                            oDatosVista.DTOTabAvanceNotas = new DTOTabAvanceNotas();
-                        }
-                    }
-                }
-                #endregion
-
-                //Pendiente: Buscar el curso dentro del servicio de historia - Recorrer los cursos del detalle de matrícula de banner
-                #region Lectura de datos de inasistencias
-                //Recorrer la lista de Cursos que se encuentra en el Detalle de la Matrícula desde Banner
-                // Obtención de datos de inasistencias
                 InasistenciasBusinessLogic inasistenciasbusiness = new InasistenciasBusinessLogic();
                 DTOInasistenciasResultado wsInasistenciasRespuestaUapi = new DTOInasistenciasResultado();
+
+                List<DTOInasistenciasResultado> listwsInasistenciasRespuestaUapi = new List<DTOInasistenciasResultado>();
+                
+                string cod_periodo_compuesto_prueba = "UG" + "-" + "202320";
+
+                //Descomentar: Inicio
+                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
                 //foreach (var listaCursosBanner in wsDetalleMatriculaRespuestaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First().listaCursos)
                 //{
                 //    string cod_periodo_compuesto = oParamsBanner.CodNivelBanner + "-" + wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
-                //    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo);
-                //    if (wsInasistenciasRespuestaUapi.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
-                //    {
-                //        if (wsInasistenciasRespuestaUapi.ListaDTOInasistenciasAlumnos != null)
-                //        {
-                //            wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuestaUapi;
-                //            oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado);
-                //        }
-                //    }
-                //}
 
-                string cod_periodo_compuesto_prueba = "UG" + "-" + "202320";
+                //    //Notas Actuales
+                //    wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                //    listwsNotasActualesRespuestaUapi.Add(wsNotasActualesRespuestaUapi);
+                //    //Inasistencias
+                //    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                //    listwsInasistenciasRespuestaUapi.Add(wsInasistenciasRespuestaUapi);
+                //}
+                //Lenar Datos para Tab Avance de Notas
+                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(listwsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                //Lenar Datos para Tab Inasistencias
+                //oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(listwsInasistenciasRespuestaUapi);
+                //Descomentar: Fin
+
+                //Comodin: Comentar Inicio
+                wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+
                 wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
                 wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuestaUapi;
+
                 oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado);
-
-
-                //DTOInasistenciasResultado wsInasistenciasRespuesta = InasistenciasBusinessLogic.getInasistencias(oParams.CodLineaNegocio, oParams.CodAlumno, oParams.CodModalEst, oParams.CodPeriodo);
-
-
-                //if (wsInasistenciasRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                //    throw new Exception(wsInasistenciasRespuesta.DTOHeader.DescRetorno);
-
-                //if (wsInasistenciasRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
-                //{
-                //    if (wsInasistenciasRespuesta.ListaDTOInasistenciasAlumnos != null)
-                //    {
-                //        wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuesta;
-                //        oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado, wsRespuestas.DTOAvanceNotasRespuesta);
-                //    }
-                //}
-
-                //Nueva lógica por el servicio que se consulta
+                //Comodin: Comentar Fin
                 #endregion
 
                 //Finalizado
@@ -388,10 +232,7 @@ namespace FNT_BusinessLogic
                     oParams.CodUsuario = codUsuarioAux;
                 }
 
-                //oParams.CodUsuario = "U" + wsRespuestas.DTOAlumnosRespuesta.ListaDTOAlumnos.First().CodAlumno;
                 DTOClientesResultado wsClientesRespuesta = ClientesBusinessLogic.getClientes(oParams.CodUsuario);
-                //if (wsClientesRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                //    throw new Exception(wsClientesRespuesta.DTOHeader.DescRetorno);
 
                 if (wsClientesRespuesta.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
                 {
@@ -407,11 +248,8 @@ namespace FNT_BusinessLogic
 
                 if (!String.IsNullOrEmpty(oParams.ClienteCobrara))
                 {
-                    // Obtención de datos de documento fiscal del cliente
                     DTODocumentoFiscalResultado wsDocumentoFiscalResultado = DocumentoFiscalBusinessLogic.getDocumentoFiscal(oParams.ClienteCobrara);
-                    //if (wsDocumentoFiscalResultado.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    //    throw new Exception(wsDocumentoFiscalResultado.DTOHeader.DescRetorno);
-
+                  
                     if (wsDocumentoFiscalResultado.DTOHeader.CodigoRetorno == HeaderEnum.Correcto.ToString())
                     {
                         if (wsDocumentoFiscalResultado.ListaCriteria != null)
@@ -436,17 +274,12 @@ namespace FNT_BusinessLogic
                 //DTOTramitesResultado wsTramitesEpg = TramitesBusinessLogic.getTramites(ConfigurationManager.AppSettings["Ws_tramitator_epe"], oParams.CodLineaNegocio, oParams.CodModalEst, oParams.CodAlumno);
 
                 if (wsTramitesMiUpc.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    //throw new Exception(wsTramitesMiUpc.DTOHeader.DescRetorno);
                     wsTramitesMiUpc = new DTOTramitesResultado();
                 if (wsTramitesIntranet.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                    //throw new Exception(wsTramitesIntranet.DTOHeader.DescRetorno);
                     wsTramitesIntranet = new DTOTramitesResultado();
-                //if (wsTramitesEpg.DTOHeader.CodigoRetorno == HeaderEnum.Incorrecto.ToString())
-                //    throw new Exception(wsTramitesEpg.DTOHeader.DescRetorno);
 
                 wsRespuestas.DTOTramitesMiUpcRespuesta = wsTramitesMiUpc;
                 wsRespuestas.DTOTramitesIntranetRespuesta = wsTramitesIntranet;
-                //wsRespuestas.DTOTramitesEpgRespuesta = wsTramitesEpg;
 
                 oDatosVista.DTOTabTramites = PreparandoDataTramites(wsRespuestas.DTOTramitesMiUpcRespuesta, wsRespuestas.DTOTramitesIntranetRespuesta, wsRespuestas.DTOTramitesEpgRespuesta);
                 #endregion
@@ -463,6 +296,327 @@ namespace FNT_BusinessLogic
             oHistorialAcademico.DatosVista = oDatosVista;
 
             return oHistorialAcademico;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pc_CodLineaNegocio"></param>
+        /// <param name="pc_CodAlumno"></param>
+        /// <param name="pc_CodModalEst"></param>
+        /// <param name="pc_CodPeriodo"></param>
+        /// <returns></returns>
+        public async Task<DTOHistorialAcademico> getNotasActualesBanner(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        {
+            CultureInfo customCulture = (CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+
+            DTOHistorialAcademico oHistorialAcademico = new DTOHistorialAcademico();
+
+            DTODatosVista oDatosVista = new DTODatosVista()
+            {
+                DTODatosAlumno = new DTODatosAlumno(),
+                DTOTabDatosGenerales = new DTOTabDatosGenerales(),
+                DTOTabAvanceCurricular = new DTOTabAvanceCurricular(),
+                DTOTabHistorialNotas = new DTOTabHistorialNotas(),
+                DTOTabHorarioAlumno = new DTOTabHorarioAlumno(),
+                DTOTabAvanceNotas = new DTOTabAvanceNotas(),
+                DTOTabInasistencias = new DTOTabInasistencias(),
+                DTOTabDeudas = new DTOTabDeudas(),
+                DTOTabPromedioPonderado = new DTOTabPromedioPonderado(),
+                DTOTabTramites = new DTOTabTramites()
+            };
+
+            DTOParametrosServicios oParams = new DTOParametrosServicios()
+            {
+                CodLineaNegocio = pc_CodLineaNegocio,
+                CodAlumno = pc_CodAlumno,
+                CodModalEst = pc_CodModalEst,
+                CodPeriodo = pc_CodPeriodo
+            };
+
+            DTOWebServiceRespuestas wsRespuestas = new DTOWebServiceRespuestas();
+            DTOWebServiceRespuestasBanner wsRespuestasBanner = new DTOWebServiceRespuestasBanner();
+
+            try
+            {
+                #region Lectura de datos de alumno
+                // Obtención de datos de alumno
+                AlumnosBusinessLogic alumnosBusinessLogic = new AlumnosBusinessLogic();
+                String cod_nivel_banner = oParams.CodLineaNegocio + "G";
+                //DTOAlumnosRespuesta wsAlumnosRespuesta = AlumnosBusinessLogic.getAlumnos(oParams.CodLineaNegocio, oParams.CodAlumno);
+                DTOAlumnosRespuestaBanner wsAlumnosRespuestaBanner = await alumnosBusinessLogic.getAlumnosBanner(cod_nivel_banner, oParams.CodAlumno);
+
+                //Validación de Respuesta para Get Alumno Banner
+                if (wsAlumnosRespuestaBanner.cabecera.codigoRespuesta != "0000")
+                    throw new Exception(wsAlumnosRespuestaBanner.cabecera.mensajeRespuesta);
+                else if (wsAlumnosRespuestaBanner.detalle == null)
+                    throw new Exception(Messages.ErrorInfoAlumnoBanner);
+                else if (wsAlumnosRespuestaBanner.detalle.listaAlumno == null)
+                    throw new Exception(Messages.ErrorInfoAlumnoBanner);
+
+                wsRespuestasBanner.DTOAlumnosRespuestaBanner = wsAlumnosRespuestaBanner;
+                oDatosVista.DTODatosAlumno = PreparandoDataAlumnoBanner(wsRespuestasBanner.DTOAlumnosRespuestaBanner);
+                #endregion
+
+                DTOParametrosServiciosBanner oParamsBanner = new DTOParametrosServiciosBanner()
+                {
+                    CodAlumnoBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoAlumno,
+                    CodNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.codigo,
+                    DescripcionNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.descripcion,
+                    CodProgramaBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().codigo,
+                    DescripcionProgramalBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().descripcion,
+                    CodPidmBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().pidm,
+                    IdBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().idBanner,
+                    CodUsuarioBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoUsuario,
+                    CodModalidadBanner = pc_CodModalEst,
+                };
+
+                //Consulta de servicios
+                MatriculasBusinessLogic matriculasBusinessLogic = new MatriculasBusinessLogic();
+                DetalleMatriculaBusinessLogic detalleMatriculaBusinessLogic = new DetalleMatriculaBusinessLogic();
+
+                DTOMatriculaBannerRespuesta wsMatriculaRespuestaBanner = await matriculasBusinessLogic.getMatriculasBanner(oParamsBanner.CodNivelBanner, oParamsBanner.IdBanner, oParamsBanner.CodProgramaBanner);
+                DTODetalleMatriculaBannerRespuesta wsDetalleMatriculaRespuestaBanner = await detalleMatriculaBusinessLogic.getDetalleMatriculaBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodAlumnoBanner);
+               
+
+                #region Lectura de Notas Actuales
+                NotasActualesBusinessLogic notasActualesBusinessLogic = new NotasActualesBusinessLogic();
+                DTONotasActualesRespuesta wsNotasActualesRespuestaUapi = new DTONotasActualesRespuesta();
+
+                List<DTONotasActualesRespuesta> listwsNotasActualesRespuestaUapi = new List<DTONotasActualesRespuesta>();
+
+                InasistenciasBusinessLogic inasistenciasbusiness = new InasistenciasBusinessLogic();
+                DTOInasistenciasResultado wsInasistenciasRespuestaUapi = new DTOInasistenciasResultado();
+
+                List<DTOInasistenciasResultado> listwsInasistenciasRespuestaUapi = new List<DTOInasistenciasResultado>();
+
+                string cod_periodo_compuesto_prueba = "UG" + "-" + "202320";
+
+                //Descomentar: Inicio
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                foreach (var listaCursosBanner in wsDetalleMatriculaRespuestaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First().listaCursos)
+                {
+                    string cod_periodo_compuesto = oParamsBanner.CodNivelBanner + "-" + wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
+
+                    //Notas Actuales
+                    wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsNotasActualesRespuestaUapi.Add(wsNotasActualesRespuestaUapi);
+                    //Inasistencias
+                    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsInasistenciasRespuestaUapi.Add(wsInasistenciasRespuestaUapi);
+                }
+                //Lenar Datos para Tab Avance de Notas
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(listwsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                //Descomentar: Fin
+
+                //Comodin: Comentar Inicio
+                //wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
+                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                //Comodin: Comentar Fin
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                oHistorialAcademico.RespuestaExitosa = false;
+                oHistorialAcademico.MensajeError = ex.Message;
+            }
+
+            return oHistorialAcademico;
+        }
+
+        public async Task<DTOHistorialAcademico> getInasistenciasBanner(string pc_CodLineaNegocio, string pc_CodAlumno, string pc_CodModalEst, string pc_CodPeriodo)
+        {
+            CultureInfo customCulture = (CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = ".";
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+
+            DTOHistorialAcademico oHistorialAcademico = new DTOHistorialAcademico();
+
+            DTODatosVista oDatosVista = new DTODatosVista()
+            {
+                DTODatosAlumno = new DTODatosAlumno(),
+                DTOTabDatosGenerales = new DTOTabDatosGenerales(),
+                DTOTabAvanceCurricular = new DTOTabAvanceCurricular(),
+                DTOTabHistorialNotas = new DTOTabHistorialNotas(),
+                DTOTabHorarioAlumno = new DTOTabHorarioAlumno(),
+                DTOTabAvanceNotas = new DTOTabAvanceNotas(),
+                DTOTabInasistencias = new DTOTabInasistencias(),
+                DTOTabDeudas = new DTOTabDeudas(),
+                DTOTabPromedioPonderado = new DTOTabPromedioPonderado(),
+                DTOTabTramites = new DTOTabTramites()
+            };
+
+            DTOParametrosServicios oParams = new DTOParametrosServicios()
+            {
+                CodLineaNegocio = pc_CodLineaNegocio,
+                CodAlumno = pc_CodAlumno,
+                CodModalEst = pc_CodModalEst,
+                CodPeriodo = pc_CodPeriodo
+            };
+
+            DTOWebServiceRespuestas wsRespuestas = new DTOWebServiceRespuestas();
+            DTOWebServiceRespuestasBanner wsRespuestasBanner = new DTOWebServiceRespuestasBanner();
+
+            try
+            {
+                #region Lectura de datos de alumno
+                // Obtención de datos de alumno
+                AlumnosBusinessLogic alumnosBusinessLogic = new AlumnosBusinessLogic();
+                String cod_nivel_banner = oParams.CodLineaNegocio + "G";
+                //DTOAlumnosRespuesta wsAlumnosRespuesta = AlumnosBusinessLogic.getAlumnos(oParams.CodLineaNegocio, oParams.CodAlumno);
+                DTOAlumnosRespuestaBanner wsAlumnosRespuestaBanner = await alumnosBusinessLogic.getAlumnosBanner(cod_nivel_banner, oParams.CodAlumno);
+
+                //Validación de Respuesta para Get Alumno Banner
+                if (wsAlumnosRespuestaBanner.cabecera.codigoRespuesta != "0000")
+                    throw new Exception(wsAlumnosRespuestaBanner.cabecera.mensajeRespuesta);
+                else if (wsAlumnosRespuestaBanner.detalle == null)
+                    throw new Exception(Messages.ErrorInfoAlumnoBanner);
+                else if (wsAlumnosRespuestaBanner.detalle.listaAlumno == null)
+                    throw new Exception(Messages.ErrorInfoAlumnoBanner);
+
+                wsRespuestasBanner.DTOAlumnosRespuestaBanner = wsAlumnosRespuestaBanner;
+                oDatosVista.DTODatosAlumno = PreparandoDataAlumnoBanner(wsRespuestasBanner.DTOAlumnosRespuestaBanner);
+                #endregion
+
+                DTOParametrosServiciosBanner oParamsBanner = new DTOParametrosServiciosBanner()
+                {
+                    CodAlumnoBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoAlumno,
+                    CodNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.codigo,
+                    DescripcionNivelBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().nivel.descripcion,
+                    CodProgramaBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().codigo,
+                    DescripcionProgramalBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().programas.First().descripcion,
+                    CodPidmBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().pidm,
+                    IdBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().idBanner,
+                    CodUsuarioBanner = wsAlumnosRespuestaBanner.detalle.listaAlumno.First().codigoUsuario,
+                    CodModalidadBanner = pc_CodModalEst,
+                };
+
+                //Consulta de servicios
+                MatriculasBusinessLogic matriculasBusinessLogic = new MatriculasBusinessLogic();
+                DetalleMatriculaBusinessLogic detalleMatriculaBusinessLogic = new DetalleMatriculaBusinessLogic();
+
+                DTOMatriculaBannerRespuesta wsMatriculaRespuestaBanner = await matriculasBusinessLogic.getMatriculasBanner(oParamsBanner.CodNivelBanner, oParamsBanner.IdBanner, oParamsBanner.CodProgramaBanner);
+                DTODetalleMatriculaBannerRespuesta wsDetalleMatriculaRespuestaBanner = await detalleMatriculaBusinessLogic.getDetalleMatriculaBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodAlumnoBanner);
+
+                #region Lectura de datos de inasistencias
+                NotasActualesBusinessLogic notasActualesBusinessLogic = new NotasActualesBusinessLogic();
+                DTONotasActualesRespuesta wsNotasActualesRespuestaUapi = new DTONotasActualesRespuesta();
+
+                List<DTONotasActualesRespuesta> listwsNotasActualesRespuestaUapi = new List<DTONotasActualesRespuesta>();
+
+                InasistenciasBusinessLogic inasistenciasbusiness = new InasistenciasBusinessLogic();
+                DTOInasistenciasResultado wsInasistenciasRespuestaUapi = new DTOInasistenciasResultado();
+
+                List<DTOInasistenciasResultado> listwsInasistenciasRespuestaUapi = new List<DTOInasistenciasResultado>();
+
+                string cod_periodo_compuesto_prueba = "UG" + "-" + "202320";
+
+                //Descomentar: Inicio
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                foreach (var listaCursosBanner in wsDetalleMatriculaRespuestaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First().listaCursos)
+                {
+                    string cod_periodo_compuesto = oParamsBanner.CodNivelBanner + "-" + wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
+
+                    //Notas Actuales
+                    wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsNotasActualesRespuestaUapi.Add(wsNotasActualesRespuestaUapi);
+                    //Inasistencias
+                    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsInasistenciasRespuestaUapi.Add(wsInasistenciasRespuestaUapi);
+                }
+                //Lenar Datos para Tab Inasistencias
+                oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(listwsInasistenciasRespuestaUapi);
+                //Descomentar: Fin
+
+                //Comodin: Comentar Inicio
+                //wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
+                //wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuestaUapi;
+                //oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado);
+                //Comodin: Comentar Fin
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                oHistorialAcademico.RespuestaExitosa = false;
+                oHistorialAcademico.MensajeError = ex.Message;
+            }
+
+            return oHistorialAcademico;
+        }
+
+        private DTOTabHistorialNotas PreparandoDataHistorialNotasBanner(Dictionary<string, List<CursoHistoriaAlumno>> cursosAgrupados, DTOHistoriaAlumnoBannerRespuesta pc_Historia_AlumnoBanner)
+        {
+            DTOTabHistorialNotas oDTOTabHistorialNotas = new DTOTabHistorialNotas()
+            {
+                listaHistorialNotas = new List<DTOHistorialNotas>()
+            };
+
+            DTOHistorialNotas dTOHistorialNotas;
+            DTOHistorialNotasDet dTOHistorialNotasDet;
+            foreach (var cabecera in cursosAgrupados)
+            {
+                dTOHistorialNotas = new DTOHistorialNotas();
+
+                dTOHistorialNotas.Periodo = cabecera.Key;
+                dTOHistorialNotas.Carrera = pc_Historia_AlumnoBanner.detalle.listaHistoriaAlumno.First().programa.descripcionEspecial;
+                foreach(var detalle in cabecera.Value)
+                {
+                    dTOHistorialNotasDet = new DTOHistorialNotasDet();
+
+                    dTOHistorialNotasDet.CodigoCurso = detalle.materia.codigo + detalle.numeroCurso;
+                    dTOHistorialNotasDet.DescripcionCurso = detalle.nombreLargo;
+                    dTOHistorialNotasDet.Creditos = detalle.totalCreditos.ToString();
+                    dTOHistorialNotasDet.CodigoCurso = detalle.materia.codigo + detalle.numeroCurso;
+                    dTOHistorialNotasDet.PromedioFinal = detalle.calificacion.notaFinal;
+                    dTOHistorialNotasDet.NumeroVeces = "";
+                    dTOHistorialNotasDet.Aprobado = "";
+
+                    dTOHistorialNotas.listaHistorialNotasDet.Add(dTOHistorialNotasDet);
+                }
+                oDTOTabHistorialNotas.listaHistorialNotas.Add(dTOHistorialNotas);
+            }
+
+            return oDTOTabHistorialNotas;
+        }
+
+        private DTOTabAvanceCurricular PreparandoDataAvanceCurricularBanner(DTOAvanceCurricularBannerRespuesta wsAvanceCurricularBanner)
+        {
+            List<Area> listaAreasObligatorias = wsAvanceCurricularBanner.detalle.avanceCurricular.listaAreasObligatorias;
+            DTOTabAvanceCurricular oDTOTabAvanceCurricular = new DTOTabAvanceCurricular()
+            {
+                listaAvanceCurricularCiclos = new List<DTOAvanceCurricularCiclo>()
+            };
+
+            DTOAvanceCurricularCiclo dTOAvanceCurricularCiclo;
+            DTOAvanceCurricularDet avanceCurricular; 
+            foreach (var lista in listaAreasObligatorias)
+            {
+                dTOAvanceCurricularCiclo = new DTOAvanceCurricularCiclo();
+                dTOAvanceCurricularCiclo.Ciclo= lista.nombre.Substring(lista.nombre.Length - 2);
+
+                foreach(var listareglas in lista.listaReglas)
+                {
+                    avanceCurricular = new DTOAvanceCurricularDet();
+                    avanceCurricular.CodCurso = listareglas.nombre;
+                    avanceCurricular.DescCurso = listareglas.descripcion;
+                    
+                    foreach(var listacursos in listareglas.listaCursos)
+                    {
+                        avanceCurricular.NotaCurso = listacursos.calificacion.notaFinal;
+                        avanceCurricular.CodPeriodo = listacursos.codigoPeriodo;
+
+                    }
+                    avanceCurricular.EstadoAprob = listareglas.cumplido == "SI" ? "CUMPLIDO" : "PENDIENTE";
+
+                    dTOAvanceCurricularCiclo.listaDTOAvanceCurricular.Add(avanceCurricular);
+                }
+
+                oDTOTabAvanceCurricular.listaAvanceCurricularCiclos.Add(dTOAvanceCurricularCiclo);
+            }
+
+            return oDTOTabAvanceCurricular;
         }
 
         /// <summary>
@@ -766,6 +920,7 @@ namespace FNT_BusinessLogic
             return oHistorialAcademico;
         }
 
+
         /// <summary>
         /// Obtención y procesamiento de toda la información necesaria para llenar la vista de Pagos pendientes.
         /// </summary>
@@ -1057,7 +1212,7 @@ namespace FNT_BusinessLogic
             Dictionary<string, string> ValCampus = ObtenerValoresWebConfig("ValCampus");
             Dictionary<string, string> ValTipoOrdenMerito = ObtenerValoresWebConfig("ValTipoOrdenMerito");
 
-            dtoTabDatosGeneralesBanner.listaModalidades.Add(new DTODatosGeneralesModalidades() { ModalidadVal = oParamsBanner.CodNivelBanner, ModalidadDes = oParamsBanner.DescripcionNivelBanner });
+            dtoTabDatosGeneralesBanner.listaModalidades.Add(new DTODatosGeneralesModalidades() { ModalidadVal = oParamsBanner.CodModalidadBanner, ModalidadDes = ObtenerValorDeLlave(ValModalidades, oParamsBanner.CodModalidadBanner) });
 
             if (wsMatriculaRespuestaBanner.detalle == null)
             {
@@ -1069,7 +1224,7 @@ namespace FNT_BusinessLogic
             dtoTabDatosGeneralesBanner.listaPeriodos = dtoTabDatosGeneralesBanner.listaPeriodos.OrderByDescending(p => p.PeriodoVal).ToList();
 
             dtoTabDatosGeneralesBanner.CodPeriodo = wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
-            dtoTabDatosGeneralesBanner.CodModalidad = oParamsBanner.DescripcionNivelBanner;
+            dtoTabDatosGeneralesBanner.CodModalidad = oParamsBanner.CodModalidadBanner;
             dtoTabDatosGeneralesBanner.Facultad = wsHistoriaAlumnoBanner.detalle.listaHistoriaAlumno.First().listaCursos.First().facultad.descripcion;
             dtoTabDatosGeneralesBanner.Carrera = wsMatriculaRespuestaBanner.detalle.listaProductos.First().descripcion;
 
@@ -1079,7 +1234,7 @@ namespace FNT_BusinessLogic
                 tmpDatosGenPeriodo = new DTODatosGeneralesPorPeriodo();
 
                 tmpDatosGenPeriodo.CodPeriodo = md.periodo;
-                tmpDatosGenPeriodo.Campus = pc_AlumnoBanner.detalle.listaAlumno.First().campus.descripcion;
+                tmpDatosGenPeriodo.Campus = pc_AlumnoBanner.detalle.listaAlumno.First().campus.descripcion.ToUpper();
                 tmpDatosGenPeriodo.CicloAlumno = "";
                 tmpDatosGenPeriodo.EstadoMatricula = "";
                 tmpDatosGenPeriodo.Orden = "";
@@ -1088,6 +1243,7 @@ namespace FNT_BusinessLogic
                 tmpDatosGenPeriodo.TipoMeritoCarreraAcumulado = "";
                 tmpDatosGenPeriodo.PonderadoActual = "";
                 tmpDatosGenPeriodo.PonderadoAcumulado = wsHistoriaAlumnoBanner.detalle.listaHistoriaAlumno.First().promedioGlobalAcumulado.ToString();
+                tmpDatosGenPeriodo.Categoria= pc_AlumnoBanner.detalle.listaAlumno.First().codigoUsuario.Substring(0, 1);
                 tmpDatosGenPeriodo.PonderadoBeca = "";
                 tmpDatosGenPeriodo.Egresado = "";
                 tmpDatosGenPeriodo.Pronabec = "";
@@ -1126,11 +1282,86 @@ namespace FNT_BusinessLogic
             /// <summary>
             /// Llenado de datos de la clase DTOTabAvanceCurricular para poblar los datos de la pestaña de "Avance curricular".
             /// </summary>
-            private static DTOTabAvanceCurricular PreparandoDataAvanceCurricular(DTOMallaCurricularRespuesta pc_MallaCurricular, DTODetMatriculaResultado pc_DetalleMatricula)
+        private static DTOTabAvanceCurricular PreparandoDataAvanceCurricular(DTOMallaCurricularRespuesta pc_MallaCurricular, DTODetMatriculaResultado pc_DetalleMatricula)
         {
             DTOTabAvanceCurricular oDTOTabAvanceCurricular = new DTOTabAvanceCurricular()
             {
                  listaAvanceCurricularCiclos = new List<DTOAvanceCurricularCiclo>()
+            };
+
+            if (pc_MallaCurricular.ListaMallasCurriculares == null)
+            {
+                return oDTOTabAvanceCurricular;
+            }
+            else if (!pc_MallaCurricular.ListaMallasCurriculares.Any(p => p.ListaDTOMallasCurricularesDet.Any()))
+            {
+                return oDTOTabAvanceCurricular;
+            }
+
+            Dictionary<string, string> ValEstadoAprobacion = ObtenerValoresWebConfig("ValEstadoAprobacion");
+
+            List<DTODetMatriculaDet> listaDetalleMatricula = new List<DTODetMatriculaDet>();
+            foreach (var dm in pc_DetalleMatricula.ListaDTODetMatriculaOBJ)
+            {
+                if (dm.DTODetMatriculaCab != null && dm.ListaDTODetMatriculaDet != null)
+                {
+                    foreach (var dmd in dm.ListaDTODetMatriculaDet)
+                    {
+                        dmd.customCodPeriodo = dm.DTODetMatriculaCab.CodPeriodo;
+                    }
+                    listaDetalleMatricula.AddRange(dm.ListaDTODetMatriculaDet);
+                }
+            }
+
+            DTOAvanceCurricularDet avanceCurricular;
+            DTODetMatriculaDet cursoDetMatricula;
+
+            foreach (var mcd in pc_MallaCurricular.ListaMallasCurriculares.First().ListaDTOMallasCurricularesDet)
+            {
+                DTOAvanceCurricularCiclo acc = new DTOAvanceCurricularCiclo();
+                acc = oDTOTabAvanceCurricular.listaAvanceCurricularCiclos.Where(p => p.Ciclo == mcd.Ciclo).FirstOrDefault();
+
+                if (acc == null)
+                {
+                    acc = new DTOAvanceCurricularCiclo() { Ciclo = mcd.Ciclo, listaDTOAvanceCurricular = new List<DTOAvanceCurricularDet>() };
+                    oDTOTabAvanceCurricular.listaAvanceCurricularCiclos.Add(acc);
+                }
+
+                avanceCurricular = new DTOAvanceCurricularDet();
+                avanceCurricular.CodCurso = mcd.CodCurso;
+                avanceCurricular.DescCurso = mcd.DescCurso;
+                avanceCurricular.CantCreditos = mcd.CantCreditos.Value;
+
+                cursoDetMatricula = new DTODetMatriculaDet();
+                cursoDetMatricula = listaDetalleMatricula.Where(p => p.CodCurso == mcd.CodCurso).ToList().OrderByDescending(p => p.NumVezCurso).FirstOrDefault();
+
+                if (cursoDetMatricula != null)
+                {
+                    avanceCurricular.CodPeriodo = cursoDetMatricula.customCodPeriodo;
+                    avanceCurricular.NumVezCurso = cursoDetMatricula.NumVezCurso.HasValue ? cursoDetMatricula.NumVezCurso.Value.ToString() : String.Empty;
+                    avanceCurricular.NotaCurso = cursoDetMatricula.NotaCurso.HasValue ? cursoDetMatricula.NotaCurso.Value.ToString() : String.Empty;
+                    avanceCurricular.EstadoAprob = ObtenerValorDeLlave(ValEstadoAprobacion, cursoDetMatricula.EstadoAprob);
+                }
+                else
+                {
+                    avanceCurricular.CodPeriodo = "---";
+                    avanceCurricular.NumVezCurso = "---";
+                    avanceCurricular.NotaCurso = "---";
+                    avanceCurricular.EstadoAprob = ObtenerValorDeLlave(ValEstadoAprobacion, Constants.DefaultValue);
+                }
+
+                acc.listaDTOAvanceCurricular.Add(avanceCurricular);
+            }
+
+            oDTOTabAvanceCurricular.listaAvanceCurricularCiclos = oDTOTabAvanceCurricular.listaAvanceCurricularCiclos.OrderBy(p => p.Ciclo).ToList();
+            return oDTOTabAvanceCurricular;
+        }
+
+        private static DTOTabAvanceCurricular PreparandoDataAvanceCurricularBanner(DTOMallaCurricularRespuesta pc_MallaCurricular, DTODetMatriculaResultado pc_DetalleMatricula)
+        {
+            DTOTabAvanceCurricular oDTOTabAvanceCurricular = new DTOTabAvanceCurricular()
+            {
+                listaAvanceCurricularCiclos = new List<DTOAvanceCurricularCiclo>()
             };
 
             if (pc_MallaCurricular.ListaMallasCurriculares == null)
@@ -1514,6 +1745,111 @@ namespace FNT_BusinessLogic
         }
 
         /// <summary>
+        /// Llenado de datos de la clase DTOTabAvanceNotas para poblar los datos de la pestaña de "Notas actuales" desde Banner.
+        /// </summary>
+        /// <param name="pc_AvanceNotas"></param>
+        /// <param name="pc_DetalleMatricula"></param>
+        /// <param name="pc_MallaCurricular"></param>
+        /// <returns></returns>
+        private static DTOTabAvanceNotas PreparandoDataAvanceNotasBanner(DTONotasActualesRespuesta pc_AvanceNotasBanner, DTODetalleMatriculaBannerRespuesta pc_DetalleMatriculaBanner)
+        {
+            DTOTabAvanceNotas dTOTabAvanceNotas = new DTOTabAvanceNotas()
+            {
+                NotaRoja = 0,
+                listaAvanceNotas = new List<DTOAvanceNotasCursos>()
+            };
+
+            DTOAvanceNotasCursos tmpListaCurso;
+            DTOAvanceNotasDetalle tmpListaDetalleNota;
+
+            DetalleDetalleMatricula detalleDetalleMatricula = pc_DetalleMatriculaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First();
+
+            Double dblNotaRoja = 0;
+            if (Double.TryParse(ConfigurationManager.AppSettings["NotaRojo"], out dblNotaRoja))
+                dTOTabAvanceNotas.NotaRoja = dblNotaRoja;
+
+            foreach (var curso in detalleDetalleMatricula.listaCursos)
+            {
+                tmpListaCurso = new DTOAvanceNotasCursos()
+                {
+                    listaDetalleNotas = new List<DTOAvanceNotasDetalle>()
+                };
+                tmpListaCurso.CodigoCurso = curso.materia.codigo + curso.numeroCurso;
+                tmpListaCurso.DescripcionCurso = curso.titulo;
+                tmpListaCurso.Seccion = "";
+                tmpListaCurso.Vez = "";
+                tmpListaCurso.Creditos = "";
+                tmpListaCurso.AvancePorcentual = "";
+                tmpListaCurso.NotaNoOficial = "";
+                tmpListaCurso.NotaProyectada = "";
+
+                foreach (var itemdetallenota in pc_AvanceNotasBanner.ListaNota.First().notas)
+                {
+                    tmpListaDetalleNota = new DTOAvanceNotasDetalle();
+
+                    tmpListaDetalleNota.CodigoTipoPrueba = itemdetallenota.CodTipoPrueba;
+                    tmpListaDetalleNota.DescripcionTipoPrueba = itemdetallenota.DesTipoPrueba.ToUpper();
+                    tmpListaDetalleNota.NumeroPrueba = itemdetallenota.NumPrueba.HasValue ? itemdetallenota.NumPrueba.Value.ToString() : "--";
+                    tmpListaDetalleNota.PesoPonderado = itemdetallenota.PesoPonderado.HasValue ? itemdetallenota.PesoPonderado.Value.ToString() : "--";
+                    tmpListaDetalleNota.Nota = itemdetallenota.Nota.HasValue ? itemdetallenota.Nota.Value.ToString() : "--";
+
+                    tmpListaCurso.listaDetalleNotas.Add(tmpListaDetalleNota);
+                }
+
+                dTOTabAvanceNotas.listaAvanceNotas.Add(tmpListaCurso);
+            }
+
+            return dTOTabAvanceNotas;
+        }
+
+        private static DTOTabAvanceNotas PreparandoDataAvanceNotasBanner(List<DTONotasActualesRespuesta> pc_AvanceNotasBanner, DTODetalleMatriculaBannerRespuesta pc_DetalleMatriculaBanner)
+        {
+            DTOTabAvanceNotas dTOTabAvanceNotas = new DTOTabAvanceNotas()
+            {
+                NotaRoja = 0,
+                listaAvanceNotas = new List<DTOAvanceNotasCursos>()
+            };
+
+            Double dblNotaRoja = 0;
+            if (Double.TryParse(ConfigurationManager.AppSettings["NotaRojo"], out dblNotaRoja))
+                dTOTabAvanceNotas.NotaRoja = dblNotaRoja;
+            DTOAvanceNotasCursos tmpListaCurso;
+            DTOAvanceNotasDetalle tmpListaDetalleNota;
+            foreach (var totalservicio in pc_AvanceNotasBanner)
+            {
+                if (totalservicio.ListaNota == null)
+                   continue;
+                    foreach (var listacurso in totalservicio.ListaNota)
+                    {
+                        //Validación si no hay info que continue
+                        if (listacurso == null)
+                           continue;
+
+                            tmpListaCurso = new DTOAvanceNotasCursos()
+                            {
+                                listaDetalleNotas = new List<DTOAvanceNotasDetalle>()
+                            };
+                            tmpListaCurso.CodigoCurso = listacurso.CodCurso;
+                            tmpListaCurso.DescripcionCurso = listacurso.DescCurso;
+
+                            foreach (var listanota in listacurso.notas)
+                            {
+                                tmpListaDetalleNota = new DTOAvanceNotasDetalle();
+                                tmpListaDetalleNota.CodigoTipoPrueba = listanota.CodTipoPrueba;
+                                tmpListaDetalleNota.DescripcionTipoPrueba = listanota.DesTipoPrueba.ToUpper();
+                                tmpListaDetalleNota.NumeroPrueba = listanota.NumPrueba.HasValue ? listanota.NumPrueba.Value.ToString() : String.Empty;
+                                tmpListaDetalleNota.PesoPonderado = listanota.PesoPonderado.HasValue ? listanota.PesoPonderado.Value.ToString() : String.Empty;
+                                tmpListaDetalleNota.Nota = listanota.Nota.HasValue ? listanota.Nota.Value.ToString() : String.Empty;
+
+                                tmpListaCurso.listaDetalleNotas.Add(tmpListaDetalleNota);
+                            }
+                    }                
+            }
+
+            return dTOTabAvanceNotas;
+        }
+
+        /// <summary>
         /// Llenado de datos de la clase DTOTabInasistencias para poblar los datos de la pestaña de "Inasistencias".
         /// </summary>
         private static DTOTabInasistencias PreparandoDataInasistencias(DTOInasistenciasResultado pc_Inasistencias, DTOAvanceNotasRespuesta pc_AvanceNotas)
@@ -1634,6 +1970,53 @@ namespace FNT_BusinessLogic
 
                 dTOTabInasistencias.listaInasistencias.Add(tmpInasisAsignat);
             }
+
+            return dTOTabInasistencias;
+        }
+
+        private static DTOTabInasistencias PreparandoDataInasistencias(List<DTOInasistenciasResultado> pc_Inasistencias)
+        {
+            DTOTabInasistencias dTOTabInasistencias = new DTOTabInasistencias()
+            {
+                listaInasistencias = new List<DTOInasistenciasAsignaturas>()
+            };
+            DTOInasistenciasAsignaturas tmpInasisAsignat;
+
+            foreach (var cabecera in pc_Inasistencias)
+            {
+                if(cabecera == null)
+                    continue;
+
+                foreach (var ina in cabecera.ListaDTOInasistenciasAlumnos)
+                {
+                    if (ina.DTOInasistenciasCab == null || ina.ListaDTOInasistenciasDet == null)
+                        continue;
+
+                    //if (ina.ListaDTOInasistenciasDet.Count == 0)
+                    //    continue;
+
+                    tmpInasisAsignat = new DTOInasistenciasAsignaturas()
+                    {
+                        listaFechasInasistencia = new List<string>()
+                    };
+
+                    tmpInasisAsignat.CodigoCurso = ina.DTOInasistenciasCab.CodCurso;
+                    tmpInasisAsignat.DescripcionCurso = ina.DTOInasistenciasCab.DesCurso;
+                    tmpInasisAsignat.ClasesDictadas = ina.DTOInasistenciasCab.ClasesDictadas.HasValue ? ina.DTOInasistenciasCab.ClasesDictadas.Value.ToString() : String.Empty;
+                    tmpInasisAsignat.ClasesAsistidas = ina.DTOInasistenciasCab.ClasesAsistidas.HasValue ? ina.DTOInasistenciasCab.ClasesAsistidas.Value.ToString() : String.Empty;
+                    tmpInasisAsignat.ClasesInasistidas = ina.DTOInasistenciasCab.ClasesInasistidas.HasValue ? ina.DTOInasistenciasCab.ClasesInasistidas.Value.ToString() : String.Empty;
+                    tmpInasisAsignat.InasistenciasEfectivas = ina.DTOInasistenciasCab.ClasesEfectivasIna.HasValue ? ina.DTOInasistenciasCab.ClasesEfectivasIna.Value.ToString() : String.Empty;
+                    tmpInasisAsignat.NombreDocente = "";
+
+                    foreach (var inad in ina.ListaDTOInasistenciasDet)
+                        if (inad.FechaSesion.HasValue)
+                            tmpInasisAsignat.listaFechasInasistencia.Add(inad.FechaSesion.Value.ToString("dd.MM.yyyy"));
+
+                    dTOTabInasistencias.listaInasistencias.Add(tmpInasisAsignat);
+                }
+            }
+
+            
 
             return dTOTabInasistencias;
         }
