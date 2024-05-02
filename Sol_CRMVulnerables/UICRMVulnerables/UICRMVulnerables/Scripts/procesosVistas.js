@@ -174,7 +174,7 @@ function mostrarHistorialNotas(data) {
                             '<tr class="bg-blue " style="color: #fff;">' +
                                 '<th class="text-center">CÓDIGO</th>' +
                                 '<th class="text-center">NOMBRE</th>' +
-                                '<th class="numeric text-center">NIVEL</th>' +
+                                //'<th class="numeric text-center">NIVEL</th>' +
                                 '<th class="numeric text-center">CRÉDITOS</th>' +
                                 '<th class="numeric text-center">PROMEDIO <br>FINAL</th>' +
                                 //'<th class="numeric text-center">NÚMERO DE VECES</th>' +
@@ -188,7 +188,7 @@ function mostrarHistorialNotas(data) {
                             '<tr>' +
                                 '<td data-title="CÓDIGO">' + validText(this.CodigoCurso) + '</td>' +
                                 '<td class="text-left" data-title="NOMBRE">' + validText(this.DescripcionCurso).toUpperCase() + '</td>' +
-                                '<td data-title="NIVEL">' + validText(this.Nivel) + '</td>' +
+                                //'<td data-title="NIVEL">' + validText(this.Nivel) + '</td>' +
                                 '<td data-title="CRÉDITOS">' + validText(this.Creditos) + '</td>' +
                                 '<td data-title="PROMEDIO">' + validText(this.PromedioFinal) + '</td>' +
                                 //'<td data-title="N° DE VECES">' + validText(this.NumeroVeces) + '</td>' +

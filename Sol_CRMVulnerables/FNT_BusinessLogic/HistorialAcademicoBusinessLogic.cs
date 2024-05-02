@@ -123,12 +123,14 @@ namespace FNT_BusinessLogic
                 //Comodin: Fin
                 //DTOAvanceCurricularBannerRespuesta wsAvanceCurricularBanner = await avanceCurricularBusinessLogic.getAvanceCurricularBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.IdBanner);
                 if (wsAvanceCurricularBanner.cabecera.codigoRespuesta != "0000")
-                    throw new Exception(wsAvanceCurricularBanner.cabecera.mensajeRespuesta);
+                    //throw new Exception(wsAvanceCurricularBanner.cabecera.mensajeRespuesta);
+                    oDatosVista.DTOTabAvanceCurricular = new DTOTabAvanceCurricular();
                 else if (wsAvanceCurricularBanner.detalle == null)
-                    throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
+                    //throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
+                    oDatosVista.DTOTabAvanceCurricular = new DTOTabAvanceCurricular();
                 else if (wsAvanceCurricularBanner.detalle.avanceCurricular == null)
-                    throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
-
+                    //throw new Exception(Messages.ErrorInfoAvanceCuirricularBanner + " Nivel : " + oParamsBanner.CodNivelBanner + " Programa : " + oParamsBanner.CodProgramaBanner + " Id Banner: " + oParamsBanner.IdBanner);
+                    oDatosVista.DTOTabAvanceCurricular = new DTOTabAvanceCurricular();
                 oDatosVista.DTOTabAvanceCurricular = PreparandoDataAvanceCurricularBanner(wsAvanceCurricularBanner);
                 #endregion
 
@@ -138,9 +140,9 @@ namespace FNT_BusinessLogic
                 Detail respuesta = new Detail();
                 HistoriaAlumnoBusinessLogic historialNotasBusinessLogic = new HistoriaAlumnoBusinessLogic();
                 //Comodin: Inicio
-                DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner("UG", "UAC_ADMA_SP1", 851269);
+                //DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner("UG", "UAC_ADMA_SP1", 851269);
                 //Comodin: Fin
-                //DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodPidmBanner);
+                DTOHistoriaAlumnoBannerRespuesta wsHistorialNotasBanner = await historialNotasBusinessLogic.getHistoriaAlumnoBanner(oParamsBanner.CodNivelBanner, oParamsBanner.CodProgramaBanner, oParamsBanner.CodPidmBanner);
                 // Agrupados los cursos Agrupados
                 Dictionary<string, List<CursoHistoriaAlumno>> cursosAgrupados = respuesta.AgrupamientoCursosPeriodo(wsHistorialNotasBanner);
                 oDatosVista.DTOTabHistorialNotas = PreparandoDataHistorialNotasBanner(cursosAgrupados, wsHistorialNotasBanner);
@@ -184,32 +186,32 @@ namespace FNT_BusinessLogic
                 string cod_periodo_compuesto_prueba = "UG" + "-" + "202320";
 
                 //Descomentar: Inicio
-                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
-                //foreach (var listaCursosBanner in wsDetalleMatriculaRespuestaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First().listaCursos)
-                //{
-                //    string cod_periodo_compuesto = oParamsBanner.CodNivelBanner + "-" + wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                foreach (var listaCursosBanner in wsDetalleMatriculaRespuestaBanner.detalle.listaAlumnos.First().listaDetalleMatricula.First().listaCursos)
+                {
+                    string cod_periodo_compuesto = oParamsBanner.CodNivelBanner + "-" + wsMatriculaRespuestaBanner.detalle.listaProductos.First().listaMatriculas.First().periodo;
 
-                //    //Notas Actuales
-                //    wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
-                //    listwsNotasActualesRespuestaUapi.Add(wsNotasActualesRespuestaUapi);
-                //    //Inasistencias
-                //    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
-                //    listwsInasistenciasRespuestaUapi.Add(wsInasistenciasRespuestaUapi);
-                //}
+                    //Notas Actuales
+                    wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsNotasActualesRespuestaUapi.Add(wsNotasActualesRespuestaUapi);
+                    //Inasistencias
+                    wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto, oParamsBanner.CodAlumnoBanner, listaCursosBanner.materia.codigo + listaCursosBanner.numeroCurso);
+                    listwsInasistenciasRespuestaUapi.Add(wsInasistenciasRespuestaUapi);
+                }
                 //Lenar Datos para Tab Avance de Notas
-                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(listwsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(listwsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
                 //Lenar Datos para Tab Inasistencias
-                //oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(listwsInasistenciasRespuestaUapi);
+                oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(listwsInasistenciasRespuestaUapi);
                 //Descomentar: Fin
 
                 //Comodin: Comentar Inicio
-                wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
-                oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
+                //wsNotasActualesRespuestaUapi = await notasActualesBusinessLogic.getNotasActualesUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
+                //oDatosVista.DTOTabAvanceNotas = PreparandoDataAvanceNotasBanner(wsNotasActualesRespuestaUapi, wsDetalleMatriculaRespuestaBanner);
 
-                wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
-                wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuestaUapi;
+                //wsInasistenciasRespuestaUapi = await inasistenciasbusiness.getInasistenciasUapi(cod_periodo_compuesto_prueba, "202115595", "1ACC0238");
+                //wsRespuestas.DTOInasistenciasResultado = wsInasistenciasRespuestaUapi;
 
-                oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado);
+                //oDatosVista.DTOTabInasistencias = PreparandoDataInasistencias(wsRespuestas.DTOInasistenciasResultado);
                 //Comodin: Comentar Fin
                 #endregion
 
@@ -571,7 +573,7 @@ namespace FNT_BusinessLogic
                     dTOHistorialNotasDet.CodigoCurso = detalle.materia.codigo + detalle.numeroCurso;
                     dTOHistorialNotasDet.PromedioFinal = detalle.calificacion.notaFinal;
                     dTOHistorialNotasDet.NumeroVeces = "";
-                    dTOHistorialNotasDet.Aprobado = "";
+                    dTOHistorialNotasDet.Aprobado = detalle.calificacion.notaFinal == "CONV" ? "SI": detalle.calificacion.notaFinal != null ? Convert.ToDecimal(detalle.calificacion.notaFinal)>=13?"SI": "NO" : "NO";
 
                     dTOHistorialNotas.listaHistorialNotasDet.Add(dTOHistorialNotasDet);
                 }
@@ -583,11 +585,18 @@ namespace FNT_BusinessLogic
 
         private DTOTabAvanceCurricular PreparandoDataAvanceCurricularBanner(DTOAvanceCurricularBannerRespuesta wsAvanceCurricularBanner)
         {
-            List<Area> listaAreasObligatorias = wsAvanceCurricularBanner.detalle.avanceCurricular.listaAreasObligatorias;
             DTOTabAvanceCurricular oDTOTabAvanceCurricular = new DTOTabAvanceCurricular()
             {
                 listaAvanceCurricularCiclos = new List<DTOAvanceCurricularCiclo>()
             };
+
+            if (wsAvanceCurricularBanner.detalle == null){
+                return oDTOTabAvanceCurricular;
+            }
+
+            else { 
+            List<Area> listaAreasObligatorias = wsAvanceCurricularBanner.detalle.avanceCurricular.listaAreasObligatorias;
+           
 
             DTOAvanceCurricularCiclo dTOAvanceCurricularCiclo;
             DTOAvanceCurricularDet avanceCurricular; 
@@ -617,6 +626,7 @@ namespace FNT_BusinessLogic
             }
 
             return oDTOTabAvanceCurricular;
+            }
         }
 
         /// <summary>
@@ -1753,11 +1763,17 @@ namespace FNT_BusinessLogic
         /// <returns></returns>
         private static DTOTabAvanceNotas PreparandoDataAvanceNotasBanner(DTONotasActualesRespuesta pc_AvanceNotasBanner, DTODetalleMatriculaBannerRespuesta pc_DetalleMatriculaBanner)
         {
+           
             DTOTabAvanceNotas dTOTabAvanceNotas = new DTOTabAvanceNotas()
             {
                 NotaRoja = 0,
                 listaAvanceNotas = new List<DTOAvanceNotasCursos>()
             };
+
+            if (pc_AvanceNotasBanner.ListaNota == null)
+            {
+                return dTOTabAvanceNotas;
+            }
 
             DTOAvanceNotasCursos tmpListaCurso;
             DTOAvanceNotasDetalle tmpListaDetalleNota;

@@ -21,20 +21,22 @@ namespace FNT_BusinessLogic
         {
             ConexionServicio conexion = new ConexionServicio();
             TokenResponse token = await conexion.GetTokenAsync();
+            string SubscriptionKey = ConfigurationManager.AppSettings["Ocp-Apim-Subscription-Key-Banner"];
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+            _httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SubscriptionKey);
 
             var response = await _httpClient.GetAsync($"/Academico/v4.0/AvanceCurricular?CodigoNivel={pc_cod_nivel}&CodigoPrograma={pc_cod_programa}&IdBanner={pc_id_banner}");
-            if (response.IsSuccessStatusCode)
-            {
+            //if (response.IsSuccessStatusCode)
+            //{
                 var jsonString = await response.Content.ReadAsStringAsync();
                 var avanceResponse = JsonConvert.DeserializeObject<DTOAvanceCurricularBannerRespuesta>(jsonString);
                 return avanceResponse;
-            }
-            else
-            {
-                throw new Exception($"Error al obtener los datos de avance curricular de banner en el servicio. Status code: {response.StatusCode}");
-            }
+            //}
+            //else
+            //{
+            //    throw new Exception($"Error al obtener los datos de avance curricular de banner en el servicio. Status code: {response.StatusCode}");
+            //}
         }
     }
 }

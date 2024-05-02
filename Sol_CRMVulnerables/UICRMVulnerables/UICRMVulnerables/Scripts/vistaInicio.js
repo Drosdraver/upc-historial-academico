@@ -8,7 +8,7 @@
     //urlCodPeriodo = getURLParameter("CodPeriodo");
 
     urlCodLineaNegocio = "U";
-    urlCodAlumno = "202013505";
+    urlCodAlumno = "202120265";
     urlCodModalEst = "AC";
     urlCodPeriodo = "202220";
 

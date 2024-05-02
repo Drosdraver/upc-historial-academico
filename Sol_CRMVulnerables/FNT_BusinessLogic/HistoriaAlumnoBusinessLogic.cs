@@ -24,8 +24,10 @@ namespace FNT_BusinessLogic
         {
             ConexionServicio conexion = new ConexionServicio();
             TokenResponse token = await conexion.GetTokenAsync();
+            string SubscriptionKey = ConfigurationManager.AppSettings["Ocp-Apim-Subscription-Key-Banner"];
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+            _httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SubscriptionKey);
 
             var response = await _httpClient.GetAsync($"/Academico/v4.0/HistoriaAlumno?CodigoNivel={pc_cod_nivel}&CodigoPrograma={pc_cod_programa}&PIDM={pc_pidm}");
             if (response.IsSuccessStatusCode)

@@ -15,7 +15,7 @@ namespace FNT_Common
     /// </summary>
     public class ConexionServicio
     {
-        private readonly HttpClient _httpClientInasistencias = new HttpClient { BaseAddress = new Uri(ConfigurationManager.AppSettings["Servidor_ws_uapi"]) };
+        private readonly Uri _httpClientUClass = new Uri (ConfigurationManager.AppSettings["Servidor_ws_uapi"]) ;
 
         /// <summary>
         /// Configuración del WebClient instanciado por los servicios.
@@ -68,41 +68,50 @@ namespace FNT_Common
                 }
                 else
                 {
-                    throw new Exception($"Failed to get token. Status code: {response.StatusCode}");
+                    throw new Exception($"Error al obtener el token de Banner. Status code: {response.StatusCode}");
                 }
             }
         }
         /// <summary>
-        /// Obtener el Token de las inasistencias en al api https://upc-e2g-post-demo-api.gateway.u-planner.com
+        /// Obtener el Token de las inasistencias en al api https://apicert-manager.upc.edu.pe
         /// </summary>
         /// <returns></returns>
         public async Task<TokenResponseuapi> GetTokenUClassAsync()
         {
-            var requestBody = new
-            {
-                client_id = ConfigurationManager.AppSettings["client_id"],
-                client_secret = ConfigurationManager.AppSettings["client_secret"],
-                grant_type = ConfigurationManager.AppSettings["grant_type"]
-            };
+            string SubscriptionKey = ConfigurationManager.AppSettings["Ocp-Apim-Subscription-Key-U-class"];
 
             ServicePointManager.ServerCertificateValidationCallback = ValidateServerCertificate;
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-            var json = JsonConvert.SerializeObject(requestBody);
-            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-
-            var response = await _httpClientInasistencias.PostAsync("/oauth2/token", content);
-
-            if (response.IsSuccessStatusCode)
+            using (var httpClient = new HttpClient())
             {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                var tokenResponse = JsonConvert.DeserializeObject<TokenResponseuapi>(responseContent);
-                return tokenResponse;
-            }
-            else
-            {
-                throw new HttpRequestException($"Error al obtener el token del servidor https://upc-e2g-post-demo-api.gateway.u-planner.com. Código de estado: {response.StatusCode}");
+                httpClient.BaseAddress = _httpClientUClass;
+                // Agrega la clave de suscripción como una cabecera HTTP
+                httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SubscriptionKey);
+
+                var requestBody = new
+                {
+                    client_id = ConfigurationManager.AppSettings["client_id_u_class"],
+                    client_secret = ConfigurationManager.AppSettings["client_secret_u_class"],
+                    grant_type = ConfigurationManager.AppSettings["grant_type_u_class"]
+                };
+
+                var json = JsonConvert.SerializeObject(requestBody);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync("/tokendemo/v2.1/token", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var tokenResponse = JsonConvert.DeserializeObject<TokenResponseuapi>(responseContent);
+                    return tokenResponse;
+                }
+                else
+                {
+                    throw new HttpRequestException($"Error al obtener el token del servidor https://apicert-manager.upc.edu.pe. Código de estado: {response.StatusCode}");
+                }
             }
         }
 

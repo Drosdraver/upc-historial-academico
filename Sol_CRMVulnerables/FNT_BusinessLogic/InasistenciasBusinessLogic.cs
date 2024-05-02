@@ -84,10 +84,12 @@ namespace FNT_BusinessLogic
         {
             ConexionServicio conexion = new ConexionServicio();
             TokenResponseuapi token = await conexion.GetTokenUClassAsync();
+            string SubscriptionKey = ConfigurationManager.AppSettings["Ocp-Apim-Subscription-Key-U-class"];
 
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.access_token);
+            _httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", SubscriptionKey);
 
-            var response = await _httpClient.GetAsync($"/api/class-api/report/non-attendance-students?CodPeriodo={pc_cod_periodo}&CodAlumno={pc_cod_alumno}&CodCurso={pc_cod_curso}");
+            var response = await _httpClient.GetAsync($"/classdemo/v2.1/non-attendance-students?CodPeriodo={pc_cod_periodo}&CodAlumno={pc_cod_alumno}&CodCurso={pc_cod_curso}");
             if (response.IsSuccessStatusCode)
             {
                 var jsonString = await response.Content.ReadAsStringAsync();

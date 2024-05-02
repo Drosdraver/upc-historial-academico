@@ -22,7 +22,7 @@ namespace FNT_BusinessLogic
             DTOTramitesResultado tramites = new DTOTramitesResultado();
             tramites.DTOHeader = new DTOHeader();
 
-            if (!ExampleData.UsarDataEjemplo)
+            if (ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJTramites;
                 tramites = JsonConvert.DeserializeObject<DTOTramitesResultado>(dataEjemplo);

@@ -24,7 +24,7 @@ namespace FNT_BusinessLogic
             DTOHorarioAlumnoResultado horario = new DTOHorarioAlumnoResultado();
             horario.DTOHeader = new DTOHeader();
 
-            if (ExampleData.UsarDataEjemplo)
+            if (!ExampleData.UsarDataEjemplo)
             {
                 String dataEjemplo = ExampleData.EJHorario;
                 horario = JsonConvert.DeserializeObject<DTOHorarioAlumnoResultado>(dataEjemplo);
