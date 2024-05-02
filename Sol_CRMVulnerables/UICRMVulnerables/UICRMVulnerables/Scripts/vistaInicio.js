@@ -2,15 +2,15 @@
     showLoading(true);
 
     previousUrl = document.referrer;
-    //urlCodLineaNegocio = getURLParameter("CodLineaNegocio");
-    //urlCodAlumno = getURLParameter("CodAlumno");
-    //urlCodModalEst = getURLParameter("CodModalEst");
-    //urlCodPeriodo = getURLParameter("CodPeriodo");
+    urlCodLineaNegocio = getURLParameter("CodLineaNegocio");
+    urlCodAlumno = getURLParameter("CodAlumno");
+    urlCodModalEst = getURLParameter("CodModalEst");
+    urlCodPeriodo = getURLParameter("CodPeriodo");
 
-    urlCodLineaNegocio = "U";
-    urlCodAlumno = "202120265";
-    urlCodModalEst = "AC";
-    urlCodPeriodo = "202220";
+    //urlCodLineaNegocio = "U";
+    //urlCodAlumno = "202120265";
+    //urlCodModalEst = "AC";
+    //urlCodPeriodo = "202220";
 
     procesarServicios(procesarHistorialAcademico);
 })

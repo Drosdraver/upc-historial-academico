@@ -122,7 +122,8 @@ function mostrarAvanceCurricular(data) {
                             '<tr class="bg-blue" style="color: #fff;">' +
                                 '<th class="text-center" style="width:141px;">CÓDIGO</th>' +
                                 '<th class="text-center" style="width: 49%;">NOMBRE</th>' +
-                                '<th colspan="1" class="numeric text-center">VEZ</th>' +
+                                //Se comenta por falta de información en banner
+                                //'<th colspan="1" class="numeric text-center">VEZ</th>' +
                                 '<th class="numeric text-center">NOTA</th>' +
                                 '<th class="numeric text-center">CICLO</th>' +
                                 '<th class="numeric text-center">ESTADO</th>' +
@@ -135,7 +136,8 @@ function mostrarAvanceCurricular(data) {
                 '<tr>' +
                     '<td data-title="CÓDIGO">' + validText(this.CodCurso) + '</td>' +
                     '<td class="text-left" data-title="NOMBRE">' + validText(this.DescCurso).toUpperCase() + '</td>' +
-                    '<td data-title="VEZ">' + validText(this.NumVezCurso) + '</td>' +
+                    //Se comenta por falta de información en banner
+                    //'<td data-title="VEZ">' + validText(this.NumVezCurso) + '</td>' +
                     '<td data-title="NOTA">' + validText(this.NotaCurso) + '</td>' +
                     '<td data-title="PERIODO">' + validText(this.CodPeriodo) + '</td>' +
                     '<td data-title="ESTADO">' + validText(this.EstadoAprob) + '</td>' +
@@ -172,10 +174,10 @@ function mostrarHistorialNotas(data) {
                             '<tr class="bg-blue " style="color: #fff;">' +
                                 '<th class="text-center">CÓDIGO</th>' +
                                 '<th class="text-center">NOMBRE</th>' +
-                                '<th class="numeric text-center">NIVEL</th>' +
+                                //'<th class="numeric text-center">NIVEL</th>' +
                                 '<th class="numeric text-center">CRÉDITOS</th>' +
                                 '<th class="numeric text-center">PROMEDIO <br>FINAL</th>' +
-                                '<th class="numeric text-center">NÚMERO DE VECES</th>' +
+                                //'<th class="numeric text-center">NÚMERO DE VECES</th>' +
                                 '<th class="numeric text-center">APROBADO</th>' +
                             '</tr>' +
                         '</thead>' +
@@ -186,53 +188,54 @@ function mostrarHistorialNotas(data) {
                             '<tr>' +
                                 '<td data-title="CÓDIGO">' + validText(this.CodigoCurso) + '</td>' +
                                 '<td class="text-left" data-title="NOMBRE">' + validText(this.DescripcionCurso).toUpperCase() + '</td>' +
-                                '<td data-title="NIVEL">' + validText(this.Nivel) + '</td>' +
+                                //'<td data-title="NIVEL">' + validText(this.Nivel) + '</td>' +
                                 '<td data-title="CRÉDITOS">' + validText(this.Creditos) + '</td>' +
                                 '<td data-title="PROMEDIO">' + validText(this.PromedioFinal) + '</td>' +
-                                '<td data-title="N° DE VECES">' + validText(this.NumeroVeces) + '</td>' +
+                                //'<td data-title="N° DE VECES">' + validText(this.NumeroVeces) + '</td>' +
                                 '<td data-title="APROBADO">' + validText(this.Aprobado) + '</td>' +
                             '</tr>';
         });
 
         htmlHistorialNotas +=
                         '</tbody>' +
-                    '</table>' +
-                '</div>' +
-            '</div>' +
-            '<div class="row border-grey  mb-35">' +
-                '<div class="mb-14">' +
-                    '<table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf">' +
-                        '<thead class="cf">' +
-                            '<tr class="bg-blue-light " style="color: #1075b1;">' +
-                                '<th class="text-center" colspan="2">MATRÍCULA</th>' +
-                                '<th class=" text-center" rowspan="2">CICLO</th>' +
-                                '<th class="numeric text-center" colspan="2">PONDERADO</th>' +
-                                '<th class="numeric text-center" colspan="2">OBSERVACIONES</th>' +
-                                '<th class="numeric text-center" colspan="2">MÉRITOS</th>' +
-                            '</tr>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">TIPO</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">ESTADO</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">ACTUAL</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">ACUMULADO</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">CONST.</th>' +
-                            '<th class="bg-blue-light numeric numeric text-center" style="color: #fff;">ALT.</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">ORDEN</th>' +
-                            '<th class="bg-blue-light numeric text-center" style="color: #fff;">PERTENECE</th>' +
-                        '</thead>' +
-                        '<tbody>' +
-                            '<tr style="background: #fff; color: #555;">' +
-                                '<td data-title="TIPO" class="text-center">' + validText(this.TipoMatricula) + '</td>' +
-                                '<td data-title="ESTADO" class="text-center">' + validText(this.EstadoMatricula) + '</td>' +
-                                '<td data-title="CICLO" class="text-center">' + validText(this.Ciclo) + '</td>' +
-                                '<td data-title="ACTUAL" class="text-center">' + validText(this.PonderadoActual) + '</td>' +
-                                '<td data-title="ACUMULADO." class="text-center">' + validText(this.PonderadoAcumulado) + '</td>' +
-                                '<td data-title="CONST." class="text-center">' + validText(this.ObservacionesConst) + '</td>' +
-                                '<td data-title="ALT." class="text-center">' + validText(this.ObservacionesAlt) + '</td>' +
-                                '<td data-title="ORDEN" class="text-center">' + validText(this.OrdenMerito) + '</td>' +
-                                '<td data-title="PERTENECE" class="text-center">' + validText(this.PertenenciaMerito) + '</td>' +
-                            '</tr>' +
-                        '</tbody>' +
-                    '</table>' +
+                //Se comenta porque la información de Matrícula se usará a partir de cuando haya
+            //        '</table>' +
+            //    '</div>' +
+            //'</div>' +
+            //'<div class="row border-grey  mb-35">' +
+            //    '<div class="mb-14">' +
+            //        '<table class="col-md-12 col-sm-12 pb-21 table-bordered table-condensed cf">' +
+            //            '<thead class="cf">' +
+            //                '<tr class="bg-blue-light " style="color: #1075b1;">' +
+            //                    '<th class="text-center" colspan="2">MATRÍCULA</th>' +
+            //                    '<th class=" text-center" rowspan="2">CICLO</th>' +
+            //                    '<th class="numeric text-center" colspan="2">PONDERADO</th>' +
+            //                    '<th class="numeric text-center" colspan="2">OBSERVACIONES</th>' +
+            //                    '<th class="numeric text-center" colspan="2">MÉRITOS</th>' +
+            //                '</tr>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">TIPO</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">ESTADO</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">ACTUAL</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">ACUMULADO</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">CONST.</th>' +
+            //                '<th class="bg-blue-light numeric numeric text-center" style="color: #fff;">ALT.</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">ORDEN</th>' +
+            //                '<th class="bg-blue-light numeric text-center" style="color: #fff;">PERTENECE</th>' +
+            //            '</thead>' +
+            //            '<tbody>' +
+            //                '<tr style="background: #fff; color: #555;">' +
+            //                    '<td data-title="TIPO" class="text-center">' + validText(this.TipoMatricula) + '</td>' +
+            //                    '<td data-title="ESTADO" class="text-center">' + validText(this.EstadoMatricula) + '</td>' +
+            //                    '<td data-title="CICLO" class="text-center">' + validText(this.Ciclo) + '</td>' +
+            //                    '<td data-title="ACTUAL" class="text-center">' + validText(this.PonderadoActual) + '</td>' +
+            //                    '<td data-title="ACUMULADO." class="text-center">' + validText(this.PonderadoAcumulado) + '</td>' +
+            //                    '<td data-title="CONST." class="text-center">' + validText(this.ObservacionesConst) + '</td>' +
+            //                    '<td data-title="ALT." class="text-center">' + validText(this.ObservacionesAlt) + '</td>' +
+            //                    '<td data-title="ORDEN" class="text-center">' + validText(this.OrdenMerito) + '</td>' +
+            //                    '<td data-title="PERTENECE" class="text-center">' + validText(this.PertenenciaMerito) + '</td>' +
+            //                '</tr>' +
+            //            '</tbody>' +
+            //        '</table>' +
                 '</div>' +
             '</div>';
 
@@ -524,7 +527,8 @@ function llenarNotasCurso(codCurso) {
         $('#avanceNotas-span-codigoCurso').text(validText(data.CodigoCurso));
         $('#avanceNotas-span-seccion').text(validText(data.Seccion));
         $('#avanceNotas-span-grupo').text(validText(data.Grupo));
-        $('#avanceNotas-span-vez').text(validText(data.Vez));
+        //SE comenta porque esta información no se encuentra en banner
+        //$('#avanceNotas-span-vez').text(validText(data.Vez));
         $('#avanceNotas-span-creditos').text(validText(data.Creditos));
 
         $('#avanceNotas-tbody-notas').empty()
